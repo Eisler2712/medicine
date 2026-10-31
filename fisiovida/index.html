@@ -757,7 +757,7 @@
                 <svg class="map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg>
                 <p>El mapa lo proporciona Google Maps y puede instalar cookies de terceros. Solo se carga si lo aceptas.</p>
                 <button type="button" class="btn btn-primary" id="load-map">Cargar mapa</button>
-                <a href="[ENLACE GOOGLE MAPS]" target="_blank" rel="noopener">Abrir en Google Maps<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a><!-- REEMPLAZAR -->
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=Zaragoza%2C+Espa%C3%B1a" target="_blank" rel="noopener">Abrir en Google Maps<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a><!-- REEMPLAZAR -->
               </div>
             </div>
           </div>
@@ -892,7 +892,9 @@
     const FORM_ENDPOINT = "https://formspree.io/f/[ID_FORMULARIO]";
 
     /* URL del iframe de Google Maps (Compartir > Insertar un mapa > copia el valor de src) */
-    const MAP_EMBED_URL = "[URL INSERTAR GOOGLE MAPS]";
+    const MAP_EMBED_URL = "https://www.google.com/maps?q=Zaragoza,+Espa%C3%B1a&output=embed";
+    /* Respaldo si MAP_EMBED_URL vuelve a quedar como marcador: evita cargar una ruta relativa. */
+    const MAP_FALLBACK_URL = "https://www.google.com/maps?q=Zaragoza,+Espa%C3%B1a&output=embed";
 
     const CONSENT_KEY = "fisiovida_cookie_consent"; // solo guarda "accepted" o "rejected"
 
@@ -943,7 +945,7 @@
       mapLoaded = true;
       const box = document.getElementById("map-box");
       const iframe = document.createElement("iframe");
-      iframe.src = MAP_EMBED_URL;
+      iframe.src = MAP_EMBED_URL.indexOf("[") === -1 ? MAP_EMBED_URL : MAP_FALLBACK_URL;
       iframe.title = "Mapa de ubicación de FisioVida en Zaragoza";
       iframe.loading = "lazy";
       iframe.referrerPolicy = "no-referrer-when-downgrade";

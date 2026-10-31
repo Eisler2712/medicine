@@ -870,7 +870,7 @@
                 <p>Para no instalar cookies de terceros sin tu permiso, el mapa de Google no se carga hasta que lo aceptes. Al pulsar «Cargar mapa» aceptas las cookies de Google Maps.</p>
                 <button type="button" class="btn btn--primary btn--sm" id="load-map">Cargar mapa</button>
                 <!-- REEMPLAZAR: enlace directo a la ficha de Google Maps de la clínica -->
-                <a href="[ENLACE GOOGLE MAPS]" target="_blank" rel="noopener">Abrir en Google Maps<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=Valencia%2C+Espa%C3%B1a" target="_blank" rel="noopener">Abrir en Google Maps<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
               </div>
             </div>
           </aside>
@@ -1013,7 +1013,7 @@
 
     // URL de inserción de Google Maps (Google Maps > Compartir > Insertar un mapa > copiar el src del iframe).
     // REEMPLAZAR. Mientras sea un marcador se muestra un mapa genérico de Valencia.
-    const MAP_EMBED_URL = "[URL INSERCIÓN GOOGLE MAPS]";
+    const MAP_EMBED_URL = "https://www.google.com/maps?q=Valencia,+Espa%C3%B1a&output=embed";
     const MAP_FALLBACK_URL = "https://www.google.com/maps?q=Valencia,+Espa%C3%B1a&output=embed";
 
     const CONSENT_KEY = "sonrisaturia_cookie_consent"; // solo guarda "accepted" o "rejected"
