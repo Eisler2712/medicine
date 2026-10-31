@@ -26,10 +26,8 @@ jobs:
 
       - name: Configurar Pages
         uses: actions/configure-pages@v5
-        with:
-          # Activa GitHub Pages en el repositorio si todavia no lo esta.
-          enablement: true
 
+      # Sube la raiz completa: la portada mas una carpeta por pagina.
       - name: Empaquetar el sitio
         uses: actions/upload-pages-artifact@v3
         with:
