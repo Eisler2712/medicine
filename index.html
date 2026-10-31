@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plantillas web para centros sanitarios</title>
+  <meta name="description" content="Tres plantillas web de demostracion para centros sanitarios: atencion primaria, clinica dental y fisioterapia.">
+  <meta name="theme-color" content="#0b6b5d">
+  <meta name="robots" content="noindex">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================
+       Misma paleta y tipografia que las tres plantillas.
+       ========================================================== */
+    :root {
+      --color-primary: #0b6b5d;
+      --color-primary-dark: #08524a;
+      --color-primary-soft: #e7f4f1;
+      --color-text: #1f2a30;
+      --color-muted: #4f5d66;
+      --color-bg: #ffffff;
+      --color-bg-alt: #f5f8f8;
+      --color-border: #d9e2e4;
+      --color-focus: #1d4ed8;
+
+      --font-base: "Source Sans 3", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+      --fs-base: 1.0625rem;
+      --radius: 14px;
+      --shadow: 0 4px 18px rgba(16, 42, 48, .07);
+      --shadow-hover: 0 8px 28px rgba(16, 42, 48, .12);
+      --maxw: 1000px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: var(--font-base);
+      font-size: var(--fs-base);
+      line-height: 1.6;
+      color: var(--color-text);
+      background: var(--color-bg-alt);
+    }
+
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 1.25rem; }
+
+    header {
+      background: var(--color-bg);
+      border-bottom: 1px solid var(--color-border);
+      padding: 3.5rem 0 3rem;
+    }
+
+    h1 { margin: 0 0 .75rem; font-size: clamp(1.75rem, 4vw, 2.5rem); line-height: 1.2; }
+    header p { margin: 0; max-width: 56ch; color: var(--color-muted); }
+
+    main { padding: 2.5rem 0 4rem; }
+
+    .grid {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow .2s ease, transform .2s ease;
+    }
+
+    .card:hover, .card:focus-visible {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-2px);
+    }
+
+    .card:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+
+    .card .tag {
+      align-self: flex-start;
+      background: var(--color-primary-soft);
+      color: var(--color-primary-dark);
+      font-size: .8125rem;
+      font-weight: 600;
+      border-radius: 999px;
+      padding: .2rem .7rem;
+      margin-bottom: .9rem;
+    }
+
+    .card h2 { margin: 0 0 .5rem; font-size: 1.1875rem; color: var(--color-primary-dark); }
+    .card p { margin: 0 0 1.25rem; color: var(--color-muted); font-size: .9375rem; }
+    .card span.go { margin-top: auto; font-weight: 600; color: var(--color-primary); }
+
+    footer {
+      border-top: 1px solid var(--color-border);
+      background: var(--color-bg);
+      padding: 1.5rem 0;
+      color: var(--color-muted);
+      font-size: .875rem;
+    }
+    footer p { margin: 0; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <h1>Plantillas web para centros sanitarios</h1>
+      <p>Tres maquetas de demostracion, responsive y accesibles. Los datos de contacto, horarios y direcciones son marcadores de ejemplo pendientes de completar.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="grid">
+
+        <a class="card" href="centro-salud-las-aguilas.html">
+          <span class="tag">Atencion primaria</span>
+          <h2>Centro de Salud Las Aguilas</h2>
+          <p>Medicina de familia, pediatria, enfermeria y matrona, con bloque de urgencias destacado.</p>
+          <span class="go">Ver la plantilla &rarr;</span>
+        </a>
+
+        <a class="card" href="clinica-dental-sonrisa-turia.html">
+          <span class="tag">Clinica dental</span>
+          <h2>Sonrisa Turia</h2>
+          <p>Implantes, ortodoncia invisible, limpiezas, blanqueamiento y odontopediatria.</p>
+          <span class="go">Ver la plantilla &rarr;</span>
+        </a>
+
+        <a class="card" href="fisioterapia-fisiovida.html">
+          <span class="tag">Fisioterapia</span>
+          <h2>FisioVida</h2>
+          <p>Fisioterapia deportiva, suelo pelvico, rehabilitacion postquirurgica y puncion seca.</p>
+          <span class="go">Ver la plantilla &rarr;</span>
+        </a>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Maquetas de demostracion. No son sitios oficiales de ninguna entidad.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

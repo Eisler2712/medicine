@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FisioVida – Centro de Fisioterapia y Rehabilitación en Zaragoza</title>
+  <meta name="description" content="FisioVida, centro de fisioterapia y rehabilitación en Zaragoza: fisioterapia deportiva, suelo pélvico, rehabilitación postquirúrgica, punción seca y pilates terapéutico. Pide tu cita por teléfono.">
+  <link rel="canonical" href="[URL DEL SITIO]/"><!-- REEMPLAZAR: p. ej. https://www.fisiovida.es/ -->
+  <meta name="theme-color" content="#0b6b5d">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="FisioVida – Fisioterapia y Rehabilitación en Zaragoza">
+  <meta property="og:description" content="Fisioterapia deportiva, suelo pélvico, rehabilitación postquirúrgica, punción seca y pilates terapéutico en Zaragoza.">
+  <meta property="og:url" content="[URL DEL SITIO]/"><!-- REEMPLAZAR -->
+  <meta property="og:image" content="[URL DEL SITIO]/og-image.jpg"><!-- REEMPLAZAR: imagen 1200x630 -->
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b6b5d'/%3E%3Cpath d='M16 8v16M8 16h16' stroke='%23fff' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <!-- Fuentes. Nota RGPD: para no enviar la IP del visitante a Google, se recomienda alojar la fuente en tu propio servidor. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Datos estructurados schema.org (reemplaza los marcadores) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["MedicalClinic", "Physiotherapy"],
+    "name": "FisioVida",
+    "description": "Centro de fisioterapia y rehabilitación en Zaragoza.",
+    "url": "[URL DEL SITIO]/",
+    "telephone": "[TELÉFONO]",
+    "email": "[EMAIL]",
+    "image": "[URL DEL SITIO]/og-image.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[DIRECCIÓN]",
+      "postalCode": "[CÓDIGO POSTAL]",
+      "addressLocality": "Zaragoza",
+      "addressRegion": "Aragón",
+      "addressCountry": "ES"
+    },
+    "medicalSpecialty": "https://schema.org/Physiotherapy",
+    "availableService": [
+      { "@type": "MedicalTherapy", "name": "Fisioterapia deportiva" },
+      { "@type": "MedicalTherapy", "name": "Fisioterapia de suelo pélvico" },
+      { "@type": "MedicalTherapy", "name": "Rehabilitación postquirúrgica" },
+      { "@type": "MedicalTherapy", "name": "Punción seca" },
+      { "@type": "MedicalTherapy", "name": "Pilates terapéutico" }
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "[HORA APERTURA L-V]",
+        "closes": "[HORA CIERRE L-V]"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "[HORA APERTURA SÁBADO]",
+        "closes": "[HORA CIERRE SÁBADO]"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ==========================================================
+       MARCA: cambia aquí los colores y la tipografía de todo el sitio.
+       Contrastes comprobados sobre blanco:
+       --color-primary #0b6b5d ≈ 6,4:1 · --color-text #1f2a30 ≈ 14:1 · --color-muted #4f5d66 ≈ 6,6:1
+       ========================================================== */
+    :root {
+      --color-primary: #0b6b5d;
+      --color-primary-dark: #08524a;
+      --color-primary-soft: #e7f4f1;
+      --color-accent: #f2b880;        /* acento cálido, solo decorativo */
+      --color-accent-soft: #fdf3e8;
+      --color-emergency: #a4161a;     /* 7,4:1 sobre blanco */
+      --color-emergency-soft: #fdecec;
+      --color-text: #1f2a30;
+      --color-muted: #4f5d66;
+      --color-bg: #ffffff;
+      --color-bg-alt: #f5f8f8;
+      --color-border: #d9e2e4;
+      --color-focus: #1d4ed8;
+
+      --font-base: "Source Sans 3", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+      --fs-base: 1.0625rem;           /* 17 px */
+      --radius: 14px;
+      --radius-sm: 10px;
+      --shadow: 0 4px 18px rgba(16, 42, 48, .07);
+      --shadow-hover: 0 8px 28px rgba(16, 42, 48, .12);
+      --header-h: 72px;
+      --maxw: 1160px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: var(--font-base);
+      font-size: var(--fs-base);
+      line-height: 1.6;
+      color: var(--color-text);
+      background: var(--color-bg);
+    }
+    @media (min-width: 768px) { body { font-size: 1.125rem; } }
+    img, svg { max-width: 100%; display: block; }
+    a { color: var(--color-primary); text-underline-offset: 3px; }
+    a:hover { color: var(--color-primary-dark); }
+    h1, h2, h3 { line-height: 1.2; margin: 0 0 .6em; color: var(--color-text); }
+    h1 { font-size: clamp(2rem, 5vw, 3.1rem); font-weight: 700; }
+    h2 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); font-weight: 700; }
+    h3 { font-size: 1.2rem; font-weight: 700; }
+    p { margin: 0 0 1em; }
+
+    :focus-visible {
+      outline: 3px solid var(--color-focus);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+    section[id], [id].anchor { scroll-margin-top: calc(var(--header-h) + 16px); }
+
+    .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 1.25rem; }
+    .visually-hidden {
+      position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+    }
+
+    /* Saltar al contenido */
+    .skip-link {
+      position: absolute; left: 1rem; top: -100px; z-index: 1000;
+      background: var(--color-primary-dark); color: #fff; padding: .75rem 1rem;
+      border-radius: var(--radius-sm); font-weight: 600; text-decoration: none;
+    }
+    .skip-link:focus { top: 1rem; color: #fff; }
+
+    /* Botones */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+      min-height: 48px; padding: .7rem 1.4rem; border-radius: 999px;
+      font: inherit; font-weight: 600; text-decoration: none; cursor: pointer;
+      border: 2px solid transparent; transition: background .2s, color .2s, box-shadow .2s, transform .2s;
+    }
+    .btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+    .btn-primary { background: var(--color-primary); color: #fff; }
+    .btn-primary:hover { background: var(--color-primary-dark); color: #fff; }
+    .btn-outline { background: #fff; color: var(--color-primary); border-color: var(--color-primary); }
+    .btn-outline:hover { background: var(--color-primary-soft); color: var(--color-primary-dark); }
+    .btn-ghost { background: transparent; color: var(--color-text); border-color: var(--color-border); }
+    .btn-ghost:hover { background: var(--color-bg-alt); color: var(--color-text); }
+
+    /* ---------- Header ---------- */
+    .site-header {
+      position: fixed; inset: 0 0 auto 0; z-index: 100; height: var(--header-h);
+      background: rgba(255,255,255,.96); backdrop-filter: saturate(1.4) blur(8px);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; height: 100%; gap: 1rem; }
+    .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--color-text); font-weight: 700; font-size: 1.35rem; }
+    .brand-mark { width: 40px; height: 40px; }
+    .brand small { display: block; font-size: .78rem; font-weight: 600; color: var(--color-muted); letter-spacing: .02em; line-height: 1.1; }
+    .nav-toggle {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 48px; height: 48px; border-radius: var(--radius-sm);
+      background: transparent; border: 1px solid var(--color-border); cursor: pointer; color: var(--color-text);
+    }
+    .nav-toggle svg { width: 24px; height: 24px; }
+    .main-nav {
+      position: fixed; top: var(--header-h); left: 0; right: 0;
+      background: #fff; border-bottom: 1px solid var(--color-border); box-shadow: var(--shadow);
+      padding: .5rem 1.25rem 1.25rem; display: none;
+    }
+    .main-nav.is-open { display: block; }
+    .main-nav ul { list-style: none; margin: 0; padding: 0; }
+    .main-nav a {
+      display: flex; align-items: center; min-height: 48px; padding: 0 .5rem;
+      text-decoration: none; color: var(--color-text); font-weight: 600; border-radius: 8px;
+    }
+    .main-nav a:hover { background: var(--color-primary-soft); color: var(--color-primary-dark); }
+    .header-call { display: none; }
+    .main-nav .nav-call { margin-top: .75rem; width: 100%; color: #fff; justify-content: center; border-radius: 999px; }
+    .main-nav .nav-call:hover { background: var(--color-primary-dark); color: #fff; }
+
+    @media (min-width: 1024px) {
+      .nav-toggle { display: none; }
+      .main-nav { position: static; display: block; padding: 0; border: 0; box-shadow: none; background: transparent; }
+      .main-nav ul { display: flex; gap: .15rem; }
+      .main-nav a { padding: 0 .7rem; font-size: 1rem; }
+      .main-nav .nav-call { display: none; }
+      .header-call { display: inline-flex; }
+    }
+
+    /* ---------- Hero ---------- */
+    main { padding-top: var(--header-h); }
+    .hero {
+      background: linear-gradient(180deg, var(--color-primary-soft) 0%, #fff 100%);
+      padding: 3rem 0 3.5rem;
+      overflow: hidden;
+    }
+    .hero-grid { display: grid; gap: 2.5rem; align-items: center; }
+    .eyebrow {
+      display: inline-block; font-weight: 700; font-size: .95rem; color: var(--color-primary-dark);
+      background: #fff; border: 1px solid var(--color-border); padding: .3rem .85rem; border-radius: 999px; margin-bottom: 1rem;
+    }
+    .hero p.lead { font-size: 1.2rem; color: var(--color-muted); max-width: 36em; }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+    .hero-note { margin-top: 1rem; font-size: .98rem; color: var(--color-muted); }
+    .hero-art { max-width: 520px; margin: 0 auto; width: 100%; }
+    @media (min-width: 900px) {
+      .hero { padding: 5rem 0 5.5rem; }
+      .hero-grid { grid-template-columns: 1.1fr .9fr; }
+    }
+
+    /* ---------- Emergencias ---------- */
+    .emergency {
+      background: var(--color-emergency-soft); border-top: 1px solid #f3c7c7; border-bottom: 1px solid #f3c7c7;
+    }
+    .emergency .container { display: flex; align-items: center; gap: .9rem; padding-top: 1rem; padding-bottom: 1rem; flex-wrap: wrap; }
+    .emergency svg { width: 28px; height: 28px; color: var(--color-emergency); flex-shrink: 0; }
+    .emergency p { margin: 0; color: #5c0b0e; flex: 1 1 260px; }
+    .emergency strong { color: var(--color-emergency); }
+    .emergency a.btn { background: var(--color-emergency); color: #fff; }
+    .emergency a.btn:hover { background: #7f1013; color: #fff; }
+
+    /* ---------- Secciones ---------- */
+    .section { padding: 4rem 0; }
+    .section-alt { background: var(--color-bg-alt); }
+    .section-head { max-width: 46rem; margin-bottom: 2.5rem; }
+    .section-head p { color: var(--color-muted); font-size: 1.1rem; }
+    @media (min-width: 768px) { .section { padding: 5.5rem 0; } }
+
+    /* Sobre nosotros */
+    .about-grid { display: grid; gap: 2rem; }
+    .values { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; }
+    .values li {
+      display: flex; gap: 1rem; align-items: flex-start; background: #fff; border: 1px solid var(--color-border);
+      border-radius: var(--radius); padding: 1.1rem 1.2rem;
+    }
+    .values svg { width: 28px; height: 28px; color: var(--color-primary); flex-shrink: 0; margin-top: 2px; }
+    .values strong { display: block; }
+    .values span { color: var(--color-muted); }
+    @media (min-width: 900px) { .about-grid { grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: start; } }
+
+    /* Servicios */
+    .cards { display: grid; gap: 1.25rem; grid-template-columns: 1fr; list-style: none; margin: 0; padding: 0; }
+    @media (min-width: 640px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+    .card {
+      background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius);
+      padding: 1.6rem; box-shadow: var(--shadow); transition: box-shadow .25s, transform .25s; height: 100%;
+    }
+    .card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+    .card-icon {
+      width: 56px; height: 56px; border-radius: 14px; background: var(--color-primary-soft);
+      color: var(--color-primary); display: grid; place-items: center; margin-bottom: 1rem;
+    }
+    .card-icon svg { width: 30px; height: 30px; }
+    .card p { color: var(--color-muted); margin: 0; }
+    .card-cta {
+      background: var(--color-primary); color: #fff; border-color: var(--color-primary);
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .card-cta h3, .card-cta p { color: #fff; }
+    .card-cta .btn { margin-top: 1.2rem; background: #fff; color: var(--color-primary-dark); align-self: flex-start; }
+    .card-cta .btn:hover { background: var(--color-accent-soft); }
+
+    /* Cómo pedir cita */
+    .steps { list-style: none; counter-reset: step; padding: 0; margin: 0; display: grid; gap: 1.25rem; }
+    @media (min-width: 768px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+    .steps li {
+      counter-increment: step; background: #fff; border: 1px solid var(--color-border);
+      border-radius: var(--radius); padding: 1.5rem; position: relative;
+    }
+    .steps li::before {
+      content: counter(step); display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%;
+      background: var(--color-primary); color: #fff; font-weight: 700; margin-bottom: .9rem;
+    }
+    .steps p { color: var(--color-muted); margin: 0; }
+    .appointment-cta { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
+
+    /* Horarios */
+    .hours-grid { display: grid; gap: 1.5rem; }
+    @media (min-width: 900px) { .hours-grid { grid-template-columns: 1.3fr 1fr; } }
+    .table-wrap { background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+    table { width: 100%; border-collapse: collapse; }
+    caption { text-align: left; font-weight: 700; font-size: 1.15rem; padding: 1.1rem 1.25rem; background: var(--color-primary-soft); color: var(--color-primary-dark); }
+    th, td { text-align: left; padding: .9rem 1.25rem; border-top: 1px solid var(--color-border); }
+    th[scope="row"] { font-weight: 600; width: 45%; }
+    thead th { font-size: .95rem; color: var(--color-muted); font-weight: 600; background: #fff; }
+    .info-box {
+      background: #fff; border: 1px solid var(--color-border); border-left: 5px solid var(--color-primary);
+      border-radius: var(--radius); padding: 1.4rem 1.5rem;
+    }
+    .info-box.warn { border-left-color: var(--color-emergency); }
+    .info-box h3 { margin-bottom: .4rem; }
+    .info-box p:last-child { margin-bottom: 0; }
+
+    /* Contacto */
+    .contact-grid { display: grid; gap: 2rem; }
+    @media (min-width: 960px) { .contact-grid { grid-template-columns: 1.15fr .85fr; gap: 3rem; } }
+    .form-card { background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius); padding: 1.6rem; box-shadow: var(--shadow); }
+    @media (min-width: 768px) { .form-card { padding: 2.2rem; } }
+    .notice {
+      display: flex; gap: .75rem; align-items: flex-start; background: var(--color-accent-soft);
+      border: 1px solid #f0d3b2; border-radius: var(--radius-sm); padding: .9rem 1rem; margin-bottom: 1.5rem; color: #5a3410;
+    }
+    .notice svg { width: 24px; height: 24px; flex-shrink: 0; color: #8a4b0f; margin-top: 2px; }
+    .notice p { margin: 0; }
+    .form-row { display: grid; gap: 1.1rem; }
+    @media (min-width: 640px) { .form-row.two { grid-template-columns: 1fr 1fr; } }
+    .field { margin-bottom: 1.1rem; }
+    .field label { display: block; font-weight: 600; margin-bottom: .35rem; }
+    .field .opt { font-weight: 400; color: var(--color-muted); }
+    .field input, .field select, .field textarea {
+      width: 100%; min-height: 48px; padding: .7rem .9rem; font: inherit; color: var(--color-text);
+      background: #fff; border: 1.5px solid #8a989f; border-radius: var(--radius-sm);
+    }
+    .field textarea { min-height: 140px; resize: vertical; }
+    .field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 1px; border-color: var(--color-focus); }
+    .field [aria-invalid="true"] { border-color: var(--color-emergency); }
+    .hint { font-size: .95rem; color: var(--color-muted); margin-top: .3rem; }
+    .error { display: block; color: var(--color-emergency); font-size: .95rem; font-weight: 600; margin-top: .35rem; }
+    .error:empty { display: none; }
+    .checkbox { display: flex; gap: .7rem; align-items: flex-start; }
+    .checkbox input { width: 24px; height: 24px; min-height: 0; margin: 2px 0 0; flex-shrink: 0; accent-color: var(--color-primary); }
+    .checkbox label { font-weight: 400; margin: 0; }
+    .hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+    .form-status { margin-top: 1rem; padding: 0; border-radius: var(--radius-sm); font-weight: 600; }
+    .form-status.is-success { padding: .9rem 1rem; background: var(--color-primary-soft); color: var(--color-primary-dark); }
+    .form-status.is-error { padding: .9rem 1rem; background: var(--color-emergency-soft); color: var(--color-emergency); }
+    .btn[disabled] { opacity: .7; cursor: progress; }
+
+    .contact-list { list-style: none; padding: 0; margin: 0 0 1.5rem; display: grid; gap: 1rem; }
+    .contact-list li { display: flex; gap: .9rem; align-items: flex-start; }
+    .contact-list svg { width: 26px; height: 26px; color: var(--color-primary); flex-shrink: 0; margin-top: 2px; }
+    .contact-list strong { display: block; }
+    .map-box {
+      border-radius: var(--radius); overflow: hidden; border: 1px solid var(--color-border); background: var(--color-bg-alt);
+      aspect-ratio: 4 / 3; position: relative;
+    }
+    .map-box iframe { width: 100%; height: 100%; border: 0; display: block; }
+    .map-placeholder {
+      position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 1.5rem; gap: .8rem;
+    }
+    .map-placeholder svg.map-icon { width: 48px; height: 48px; color: var(--color-primary); }
+    .map-placeholder p { margin: 0; color: var(--color-muted); max-width: 26rem; font-size: .98rem; }
+
+    /* Footer */
+    .site-footer { background: #10302c; color: #dbe8e5; padding: 3.5rem 0 6rem; }
+    @media (min-width: 768px) { .site-footer { padding-bottom: 2rem; } }
+    .site-footer a { color: #fff; }
+    .site-footer h2 { color: #fff; font-size: 1.15rem; margin-bottom: .8rem; }
+    .footer-grid { display: grid; gap: 2rem; }
+    @media (min-width: 768px) { .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; } }
+    .footer-grid ul { list-style: none; padding: 0; margin: 0; }
+    .footer-grid li { margin-bottom: .35rem; }
+    .linklike {
+      background: none; border: 0; padding: .35rem 0; min-height: 44px; font: inherit; color: #fff;
+      text-decoration: underline; text-underline-offset: 3px; cursor: pointer; text-align: left;
+    }
+    .linklike-inline { background: none; border: 0; padding: 0; font: inherit; color: var(--color-primary); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.15); margin-top: 2.5rem; padding-top: 1.25rem; font-size: .95rem; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between; }
+
+    /* Botón flotante móvil */
+    .fab-call {
+      position: fixed; right: 1rem; bottom: 1rem; z-index: 90; box-shadow: 0 8px 24px rgba(0,0,0,.2);
+      min-height: 56px; padding: .8rem 1.3rem;
+    }
+    @media (min-width: 768px) { .fab-call { display: none; } }
+    body.cookie-open .fab-call { display: none; }
+
+    /* Banner de cookies */
+    .cookie-banner {
+      position: fixed; left: 1rem; right: 1rem; bottom: 1rem; z-index: 200; max-width: 640px; margin: 0 auto;
+      background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius); box-shadow: 0 12px 40px rgba(0,0,0,.18);
+      padding: 1.3rem 1.4rem;
+    }
+    .cookie-banner[hidden] { display: none; }
+    .cookie-banner h2 { font-size: 1.15rem; margin-bottom: .4rem; }
+    .cookie-banner p { font-size: 1rem; color: var(--color-muted); }
+    .cookie-actions { display: flex; flex-wrap: wrap; gap: .6rem; }
+    .cookie-actions .btn { flex: 1 1 140px; }
+    .cookie-actions .btn-choice { background: var(--color-primary); color: #fff; }
+    .cookie-actions .btn-choice:hover { background: var(--color-primary-dark); }
+
+    /* Modales legales */
+    dialog.legal {
+      width: min(760px, calc(100% - 2rem)); max-height: calc(100vh - 2rem); padding: 0; border: 0;
+      border-radius: var(--radius); box-shadow: 0 20px 60px rgba(0,0,0,.3); color: var(--color-text);
+    }
+    dialog.legal::backdrop { background: rgba(10, 25, 30, .55); }
+    .legal-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.1rem 1.5rem; border-bottom: 1px solid var(--color-border); position: sticky; top: 0; background: #fff; }
+    .legal-head h2 { margin: 0; font-size: 1.35rem; }
+    .legal-body { padding: 1.3rem 1.5rem 1.8rem; }
+    .legal-body h3 { font-size: 1.08rem; margin-top: 1.2rem; }
+    .legal-review { background: var(--color-accent-soft); border-radius: var(--radius-sm); padding: .8rem 1rem; font-size: .98rem; }
+    .close-btn { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--color-border); background: #fff; cursor: pointer; display: grid; place-items: center; color: var(--color-text); }
+    .close-btn svg { width: 20px; height: 20px; }
+
+    /* Animaciones discretas */
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    .no-js .reveal { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      .card, .btn { transition: none; }
+      .card:hover { transform: none; }
+    }
+  </style>
+</head>
+<body class="no-js">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="FisioVida, ir al inicio">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="11" fill="#0b6b5d"/>
+          <circle cx="20" cy="11" r="3.4" fill="#fff"/>
+          <path d="M11 30c3-6 6-9 9-9s6 3 9 9M14 20.5l6 2.5 6-2.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>FisioVida<small>Fisioterapia y Rehabilitación</small></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="icon-open" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <nav class="main-nav" id="menu-principal" aria-label="Menú principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#pedir-cita">Pedir cita</a></li>
+          <li><a href="#horarios">Horarios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a class="btn btn-primary nav-call" href="tel:+34000000000"><!-- REEMPLAZAR por tel:+34XXXXXXXXX -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          Llamar ahora
+        </a>
+      </nav>
+
+      <a class="btn btn-primary header-call" href="tel:+34000000000"><!-- REEMPLAZAR por tel:+34XXXXXXXXX -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Llamar ahora
+      </a>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio" aria-labelledby="titulo-principal">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">Centro de fisioterapia en Zaragoza</span>
+          <h1 id="titulo-principal">FisioVida, fisioterapia y rehabilitación en Zaragoza</h1>
+          <p class="lead">Te ayudamos a recuperar el movimiento, aliviar el dolor y volver a tu actividad con un tratamiento personalizado y un seguimiento cercano.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="tel:+34000000000"><!-- REEMPLAZAR -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+              Pedir cita por teléfono
+            </a>
+            <a class="btn btn-outline" href="#horarios">Ver horarios</a>
+          </div>
+          <p class="hero-note">¿Prefieres escribirnos? <a href="#contacto">Déjanos un mensaje</a> y te llamamos para darte cita.</p>
+        </div>
+
+        <!-- Ilustración decorativa -->
+        <svg class="hero-art reveal" viewBox="0 0 520 420" aria-hidden="true" focusable="false">
+          <circle cx="270" cy="210" r="190" fill="#d5ece7"/>
+          <circle cx="410" cy="90" r="44" fill="#fbe3c9"/>
+          <rect x="90" y="300" width="360" height="22" rx="11" fill="#0b6b5d" opacity=".9"/>
+          <rect x="120" y="322" width="14" height="60" rx="5" fill="#0b6b5d" opacity=".7"/>
+          <rect x="406" y="322" width="14" height="60" rx="5" fill="#0b6b5d" opacity=".7"/>
+          <!-- paciente en camilla -->
+          <circle cx="150" cy="268" r="22" fill="#f2c7a5"/>
+          <path d="M172 282c40-6 120-8 210-2 14 1 20 18 0 20H172z" fill="#7fc4b5"/>
+          <!-- fisioterapeuta -->
+          <circle cx="330" cy="140" r="26" fill="#e0ad87"/>
+          <path d="M306 128c4-20 40-24 50 0-10-6-36-8-50 0z" fill="#3c2a21"/>
+          <path d="M292 250c0-50 14-84 38-84s40 34 40 84z" fill="#0b6b5d"/>
+          <path d="M300 200c-20 22-50 50-70 70" stroke="#e0ad87" stroke-width="14" stroke-linecap="round" fill="none"/>
+          <path d="M360 200c-12 30-40 56-70 76" stroke="#e0ad87" stroke-width="14" stroke-linecap="round" fill="none"/>
+          <!-- pelota de pilates -->
+          <circle cx="440" cy="260" r="38" fill="#f2b880"/>
+          <path d="M404 250c22 10 50 10 72 0" stroke="#fff" stroke-width="3" fill="none" opacity=".7"/>
+          <!-- detalles -->
+          <path d="M70 150c14-10 28-10 42 0s28 10 42 0" stroke="#0b6b5d" stroke-width="3" fill="none" stroke-linecap="round" opacity=".5"/>
+          <path d="M440 170l8 8m0-8l-8 8" stroke="#0b6b5d" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ================= EMERGENCIAS ================= -->
+    <aside class="emergency" aria-label="Aviso de emergencias">
+      <div class="container">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0zM12 9v4M12 17h.01"/></svg>
+        <p><strong>En caso de emergencia, llama al 112.</strong> FisioVida no es un servicio de urgencias.</p>
+        <a class="btn" href="tel:112">Llamar al 112</a>
+      </div>
+    </aside>
+
+    <!-- ================= SOBRE NOSOTROS ================= -->
+    <section class="section" id="sobre-nosotros" aria-labelledby="titulo-sobre">
+      <div class="container about-grid">
+        <div class="reveal">
+          <h2 id="titulo-sobre">Sobre nosotros</h2>
+          <p>En FisioVida acompañamos a cada paciente desde la primera valoración hasta el alta. Escuchamos, explicamos qué te pasa con palabras sencillas y diseñamos un plan de tratamiento adaptado a ti y a tus objetivos.</p>
+          <p>Combinamos terapia manual, ejercicio terapéutico y técnicas específicas para que no solo mejores hoy, sino que aprendas a cuidarte y prevenir nuevas lesiones.</p>
+          <p>[PRESENTACIÓN DEL EQUIPO: NOMBRES, TITULACIÓN Y Nº DE COLEGIADO EN EL COLEGIO PROFESIONAL DE FISIOTERAPEUTAS DE ARAGÓN]</p>
+        </div>
+        <ul class="values reveal">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+            <div><strong>Trato cercano</strong><span>Tiempo para escucharte y resolver tus dudas.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg>
+            <div><strong>Plan personalizado</strong><span>Valoración inicial y objetivos claros desde el primer día.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+            <div><strong>Seguimiento continuo</strong><span>Revisamos tu evolución y ajustamos el tratamiento.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div><strong>Prevención</strong><span>Ejercicios y pautas para que la mejora dure.</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= SERVICIOS ================= -->
+    <section class="section section-alt" id="servicios" aria-labelledby="titulo-servicios">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="titulo-servicios">Nuestros servicios</h2>
+          <p>Tratamientos de fisioterapia y rehabilitación para cada etapa: desde una lesión deportiva hasta la recuperación después de una operación.</p>
+        </div>
+        <ul class="cards">
+          <li class="reveal">
+            <article class="card">
+              <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="4" r="2"/><path d="M8 21l3-6 3 2v5M6 12l3-3 4 1 3 3 3 1M11 15l-2-4"/></svg></div>
+              <h3>Fisioterapia deportiva</h3>
+              <p>Prevención y tratamiento de lesiones musculares, tendinosas y articulares para que vuelvas a entrenar con seguridad.</p>
+            </article>
+          </li>
+          <li class="reveal">
+            <article class="card">
+              <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9c0 6 4 10 8 10s8-4 8-10"/><path d="M8 9c0 3 2 5 4 5s4-2 4-5"/><path d="M3 9h18"/></svg></div>
+              <h3>Suelo pélvico</h3>
+              <p>Valoración y tratamiento en embarazo, posparto, incontinencia o dolor pélvico, en un entorno discreto y de confianza.</p>
+            </article>
+          </li>
+          <li class="reveal">
+            <article class="card">
+              <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3v6a5 5 0 0 0 10 0V3"/><path d="M12 14v7M9 21h6"/><path d="M10 6h4"/></svg></div>
+              <h3>Rehabilitación postquirúrgica</h3>
+              <p>Recuperación tras cirugía de rodilla, cadera, hombro, columna y otras intervenciones, coordinada con las pautas de tu cirujano.</p>
+            </article>
+          </li>
+          <li class="reveal">
+            <article class="card">
+              <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4L9 15"/><path d="M15 4h5v5"/><path d="M9 15l-5 5"/><circle cx="7" cy="9" r="1"/><circle cx="15" cy="17" r="1"/></svg></div>
+              <h3>Punción seca</h3>
+              <p>Técnica con aguja fina para tratar puntos gatillo miofasciales y aliviar el dolor y la tensión muscular.</p>
+            </article>
+          </li>
+          <li class="reveal">
+            <article class="card">
+              <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M4 20h16"/><path d="M6 16l4-4 2 2 2-2 4 4"/><path d="M12 7v5"/></svg></div>
+              <h3>Pilates terapéutico</h3>
+              <p>Ejercicio guiado en grupos reducidos o sesiones individuales para mejorar postura, fuerza y control del movimiento.</p>
+            </article>
+          </li>
+          <li class="reveal">
+            <article class="card card-cta">
+              <h3>¿No sabes qué tratamiento necesitas?</h3>
+              <p>Llámanos y te orientamos. En la primera sesión hacemos una valoración completa.</p>
+              <a class="btn" href="tel:+34000000000"><!-- REEMPLAZAR -->Llamar para pedir cita</a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= PEDIR CITA ================= -->
+    <section class="section" id="pedir-cita" aria-labelledby="titulo-cita">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="titulo-cita">Cómo pedir cita</h2>
+          <p>Pedir cita es rápido y sin complicaciones. Te atendemos personalmente para encontrar el hueco que mejor te encaje.</p>
+        </div>
+        <ol class="steps">
+          <li class="reveal">
+            <h3>Llámanos</h3>
+            <p>Llama al <a href="tel:+34000000000">[TELÉFONO]</a><!-- REEMPLAZAR --> en nuestro horario de atención o déjanos un mensaje en el formulario de contacto.</p>
+          </li>
+          <li class="reveal">
+            <h3>Elige día y hora</h3>
+            <p>Te proponemos los huecos disponibles y te indicamos qué traer a la primera sesión (informes médicos, pruebas, ropa cómoda).</p>
+          </li>
+          <li class="reveal">
+            <h3>Valoración inicial</h3>
+            <p>En la primera visita evaluamos tu caso y te explicamos el plan de tratamiento.</p>
+          </li>
+        </ol>
+        <div class="appointment-cta reveal">
+          <a class="btn btn-primary" href="tel:+34000000000"><!-- REEMPLAZAR -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            Pedir cita por teléfono
+          </a>
+          <a class="btn btn-outline" href="#contacto">Prefiero que me llaméis</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HORARIOS ================= -->
+    <section class="section section-alt" id="horarios" aria-labelledby="titulo-horarios">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="titulo-horarios">Horarios</h2>
+          <p>Atendemos con cita previa. Si no puedes venir en tu hora, avísanos con antelación para dejar el hueco a otro paciente.</p>
+        </div>
+        <div class="hours-grid">
+          <div class="table-wrap reveal">
+            <table>
+              <caption>Horario de atención</caption>
+              <thead>
+                <tr><th scope="col">Día</th><th scope="col">Horario</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Lunes a viernes</th><td>[HORARIO LUNES A VIERNES]</td></tr>
+                <tr><th scope="row">Sábados</th><td>[HORARIO SÁBADOS O "CERRADO"]</td></tr>
+                <tr><th scope="row">Domingos y festivos</th><td>[HORARIO DOMINGOS Y FESTIVOS O "CERRADO"]</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="reveal" style="display:grid; gap:1.25rem; align-content:start;">
+            <div class="info-box">
+              <h3>Cita previa</h3>
+              <p>Todas las sesiones son con cita previa. Pídela por teléfono en el <a href="tel:+34000000000">[TELÉFONO]</a><!-- REEMPLAZAR --> o a través del formulario de contacto.</p>
+            </div>
+            <div class="info-box warn">
+              <h3>Urgencias</h3>
+              <p>No atendemos urgencias médicas. Ante una emergencia, llama al <a href="tel:112">112</a> o acude al servicio de urgencias más cercano.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+    <section class="section" id="contacto" aria-labelledby="titulo-contacto">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="titulo-contacto">Contacto</h2>
+          <p>Escríbenos y te responderemos lo antes posible. Si quieres cita, indícalo y te llamaremos para concretarla.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="form-card reveal">
+            <div class="notice" role="note">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+              <p><strong>No incluyas datos clínicos ni información médica sensible en este formulario.</strong> Hablaremos de tu caso en consulta o por teléfono.</p>
+            </div>
+
+            <form id="contact-form" novalidate>
+              <div class="form-row two">
+                <div class="field">
+                  <label for="nombre">Nombre y apellidos</label>
+                  <input id="nombre" name="nombre" type="text" autocomplete="name" required aria-required="true" aria-describedby="nombre-error">
+                  <span class="error" id="nombre-error"></span>
+                </div>
+                <div class="field">
+                  <label for="email">Correo electrónico</label>
+                  <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-required="true" aria-describedby="email-error">
+                  <span class="error" id="email-error"></span>
+                </div>
+              </div>
+              <div class="form-row two">
+                <div class="field">
+                  <label for="telefono">Teléfono <span class="opt">(opcional)</span></label>
+                  <input id="telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="telefono-hint telefono-error">
+                  <p class="hint" id="telefono-hint">Necesario si quieres que te llamemos para darte cita.</p>
+                  <span class="error" id="telefono-error"></span>
+                </div>
+                <div class="field">
+                  <label for="motivo">Motivo</label>
+                  <select id="motivo" name="motivo" required aria-required="true" aria-describedby="motivo-error">
+                    <option value="">Selecciona una opción</option>
+                    <option value="cita">Quiero que me llaméis para pedir cita</option>
+                    <option value="info-servicios">Información sobre servicios</option>
+                    <option value="pilates">Grupos de pilates terapéutico</option>
+                    <option value="tarifas">Tarifas y bonos</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                  <span class="error" id="motivo-error"></span>
+                </div>
+              </div>
+              <div class="field">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required aria-required="true" aria-describedby="mensaje-hint mensaje-error" maxlength="1500"></textarea>
+                <p class="hint" id="mensaje-hint">Por ejemplo, tu disponibilidad horaria. Recuerda: sin datos clínicos.</p>
+                <span class="error" id="mensaje-error"></span>
+              </div>
+
+              <!-- Honeypot anti-spam: no lo rellenes -->
+              <div class="hp" aria-hidden="true">
+                <label for="web">No rellenar este campo</label>
+                <input id="web" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="field">
+                <div class="checkbox">
+                  <input id="privacidad" name="privacidad" type="checkbox" required aria-required="true" aria-describedby="privacidad-error">
+                  <label for="privacidad">He leído y acepto la <button type="button" class="linklike-inline" data-open="modal-privacidad">política de privacidad</button>.</label>
+                </div>
+                <span class="error" id="privacidad-error"></span>
+              </div>
+
+              <button class="btn btn-primary" type="submit" id="submit-btn">Enviar mensaje</button>
+              <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <div class="reveal">
+            <ul class="contact-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                <div><strong>Dirección</strong>[DIRECCIÓN], [CÓDIGO POSTAL] Zaragoza</div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+                <div><strong>Teléfono (citas)</strong><a href="tel:+34000000000">[TELÉFONO]</a><!-- REEMPLAZAR --></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                <div><strong>Correo electrónico</strong><a href="mailto:[EMAIL]">[EMAIL]</a><!-- REEMPLAZAR --></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                <div><strong>Horario</strong>[HORARIO LUNES A VIERNES] · <a href="#horarios">Ver horario completo</a></div>
+              </li>
+            </ul>
+
+            <div class="map-box" id="map-box">
+              <div class="map-placeholder" id="map-placeholder">
+                <svg class="map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg>
+                <p>El mapa lo proporciona Google Maps y puede instalar cookies de terceros. Solo se carga si lo aceptas.</p>
+                <button type="button" class="btn btn-primary" id="load-map">Cargar mapa</button>
+                <a href="[ENLACE GOOGLE MAPS]" target="_blank" rel="noopener">Abrir en Google Maps<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a><!-- REEMPLAZAR -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>FisioVida</h2>
+          <p>Centro de fisioterapia y rehabilitación en Zaragoza.</p>
+          <p>[DIRECCIÓN], [CÓDIGO POSTAL] Zaragoza<br>
+            Tel.: <a href="tel:+34000000000">[TELÉFONO]</a><!-- REEMPLAZAR --><br>
+            <a href="mailto:[EMAIL]">[EMAIL]</a></p>
+          <p>[Nº DE REGISTRO SANITARIO DEL CENTRO – GOBIERNO DE ARAGÓN]</p>
+        </div>
+        <div>
+          <h2>Navegación</h2>
+          <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#pedir-cita">Pedir cita</a></li>
+            <li><a href="#horarios">Horarios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Información legal</h2>
+          <ul>
+            <li><button type="button" class="linklike" data-open="modal-aviso">Aviso legal</button></li>
+            <li><button type="button" class="linklike" data-open="modal-privacidad">Política de privacidad</button></li>
+            <li><button type="button" class="linklike" data-open="modal-cookies">Política de cookies</button></li>
+            <li><button type="button" class="linklike" id="cookie-settings">Configurar cookies</button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> FisioVida · [RAZÓN SOCIAL]. Todos los derechos reservados.</p>
+        <p>Emergencias: <a href="tel:112">112</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante (solo móvil) -->
+  <a class="btn btn-primary fab-call" href="tel:+34000000000" aria-label="Llamar a FisioVida"><!-- REEMPLAZAR -->
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+    Llamar
+  </a>
+
+  <!-- Banner de cookies -->
+  <div class="cookie-banner" id="cookie-banner" role="region" aria-labelledby="cookie-title" hidden>
+    <h2 id="cookie-title">Tu privacidad</h2>
+    <p>Usamos solo las cookies técnicas necesarias. Si aceptas, también cargaremos el mapa de Google Maps, que puede instalar cookies de terceros. Más información en la <button type="button" class="linklike-inline" data-open="modal-cookies">política de cookies</button>.</p>
+    <div class="cookie-actions">
+      <button type="button" class="btn btn-choice" id="cookie-reject">Rechazar</button>
+      <button type="button" class="btn btn-choice" id="cookie-accept">Aceptar</button>
+    </div>
+  </div>
+
+  <!-- ================= MODALES LEGALES (textos a revisar por un profesional) ================= -->
+  <dialog class="legal" id="modal-aviso" aria-labelledby="modal-aviso-title">
+    <div class="legal-head">
+      <h2 id="modal-aviso-title">Aviso legal</h2>
+      <button type="button" class="close-btn" data-close aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="legal-body">
+      <p class="legal-review">Texto de ejemplo. Debe revisarlo un profesional jurídico antes de publicar la web.</p>
+      <h3>Titular del sitio web</h3>
+      <p>En cumplimiento de la Ley 34/2002 (LSSI-CE), se informa: titular: [RAZÓN SOCIAL]; CIF: [CIF]; domicilio: [DIRECCIÓN], [CÓDIGO POSTAL] Zaragoza; email: [EMAIL]; teléfono: [TELÉFONO]; datos registrales: [DATOS REGISTRO MERCANTIL]; nº de registro sanitario: [Nº DE REGISTRO SANITARIO].</p>
+      <h3>Profesión regulada</h3>
+      <p>Fisioterapeutas colegiados en el [COLEGIO PROFESIONAL DE FISIOTERAPEUTAS DE ARAGÓN]. Título: Grado/Diplomatura en Fisioterapia, expedido en España.</p>
+      <h3>Condiciones de uso</h3>
+      <p>La información de esta web es general y no sustituye una valoración profesional individual.</p>
+      <h3>Propiedad intelectual</h3>
+      <p>Los contenidos de esta web pertenecen a [RAZÓN SOCIAL] salvo que se indique lo contrario.</p>
+    </div>
+  </dialog>
+
+  <dialog class="legal" id="modal-privacidad" aria-labelledby="modal-privacidad-title">
+    <div class="legal-head">
+      <h2 id="modal-privacidad-title">Política de privacidad</h2>
+      <button type="button" class="close-btn" data-close aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="legal-body">
+      <p class="legal-review">Texto de ejemplo. Debe revisarlo un profesional jurídico o de protección de datos antes de publicar la web.</p>
+      <h3>Responsable del tratamiento</h3>
+      <p>[RAZÓN SOCIAL], CIF [CIF], [DIRECCIÓN], [CÓDIGO POSTAL] Zaragoza. Email: [EMAIL]. Delegado de Protección de Datos (DPD): [CONTACTO DPD].</p>
+      <h3>Finalidad</h3>
+      <p>Responder a las consultas recibidas a través del formulario de contacto y, si lo solicitas, llamarte para concertar una cita. El formulario no está pensado para recibir datos de salud: no los incluyas.</p>
+      <h3>Base jurídica</h3>
+      <p>Tu consentimiento, al marcar la casilla del formulario (art. 6.1.a RGPD).</p>
+      <h3>Conservación</h3>
+      <p>Conservaremos tus datos el tiempo necesario para atender tu consulta y, después, durante [PLAZO DE CONSERVACIÓN].</p>
+      <h3>Destinatarios</h3>
+      <p>No se cederán datos a terceros salvo obligación legal. Proveedor de envío del formulario: [PROVEEDOR, p. ej. Formspree] como encargado del tratamiento.</p>
+      <h3>Derechos</h3>
+      <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a [EMAIL]. También puedes reclamar ante la Agencia Española de Protección de Datos (www.aepd.es).</p>
+    </div>
+  </dialog>
+
+  <dialog class="legal" id="modal-cookies" aria-labelledby="modal-cookies-title">
+    <div class="legal-head">
+      <h2 id="modal-cookies-title">Política de cookies</h2>
+      <button type="button" class="close-btn" data-close aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="legal-body">
+      <p class="legal-review">Texto de ejemplo. Debe revisarlo un profesional antes de publicar la web.</p>
+      <h3>Qué usamos</h3>
+      <p><strong>Técnica (necesaria):</strong> guardamos únicamente tu elección sobre las cookies (clave <code>fisiovida_cookie_consent</code> en el almacenamiento del navegador), durante 12 meses.</p>
+      <p><strong>Terceros (opcional):</strong> Google Maps, solo si aceptas o pulsas "Cargar mapa". Google puede instalar sus propias cookies; consulta su política en policies.google.com.</p>
+      <h3>Cómo cambiar tu elección</h3>
+      <p>Usa el enlace "Configurar cookies" del pie de página en cualquier momento, o borra los datos del sitio en tu navegador.</p>
+      <h3>Responsable</h3>
+      <p>[RAZÓN SOCIAL], CIF [CIF]. Contacto: [EMAIL].</p>
+    </div>
+  </dialog>
+
+
+  <script>
+  (function () {
+    "use strict";
+    document.body.classList.remove("no-js");
+
+    /* =========================================================
+       CONFIGURACIÓN DEL FORMULARIO — único punto a cambiar.
+       Crea un formulario en https://formspree.io (u otro servicio
+       / endpoint propio que acepte POST JSON) y pega aquí su URL.
+       ========================================================= */
+    const FORM_ENDPOINT = "https://formspree.io/f/[ID_FORMULARIO]";
+
+    /* URL del iframe de Google Maps (Compartir > Insertar un mapa > copia el valor de src) */
+    const MAP_EMBED_URL = "[URL INSERTAR GOOGLE MAPS]";
+
+    const CONSENT_KEY = "fisiovida_cookie_consent"; // solo guarda "accepted" o "rejected"
+
+    /* Año dinámico */
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    /* ---------- Menú móvil ---------- */
+    const toggle = document.querySelector(".nav-toggle");
+    const nav = document.getElementById("menu-principal");
+    const iconPath = toggle.querySelector("path");
+    function setMenu(open) {
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+      nav.classList.toggle("is-open", open);
+      iconPath.setAttribute("d", open ? "M6 6l12 12M18 6L6 18" : "M4 7h16M4 12h16M4 17h16");
+    }
+    toggle.addEventListener("click", function () { setMenu(toggle.getAttribute("aria-expanded") !== "true"); });
+    nav.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") { setMenu(false); toggle.focus(); }
+    });
+    window.matchMedia("(min-width: 1024px)").addEventListener("change", function (mq) { if (mq.matches) setMenu(false); });
+
+    /* ---------- Animaciones de aparición ---------- */
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reveals = document.querySelectorAll(".reveal");
+    if (reduce || !("IntersectionObserver" in window)) {
+      reveals.forEach(function (el) { el.classList.add("is-visible"); });
+    } else {
+      const io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) { entry.target.classList.add("is-visible"); io.unobserve(entry.target); }
+        });
+      }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+      reveals.forEach(function (el) { io.observe(el); });
+    }
+
+    /* ---------- Consentimiento de cookies + mapa ---------- */
+    const banner = document.getElementById("cookie-banner");
+    function getConsent() { try { return localStorage.getItem(CONSENT_KEY); } catch (e) { return null; } }
+    function setConsent(v) { try { localStorage.setItem(CONSENT_KEY, v); } catch (e) {} }
+    function showBanner() { banner.hidden = false; document.body.classList.add("cookie-open"); }
+    function hideBanner() { banner.hidden = true; document.body.classList.remove("cookie-open"); }
+
+    let mapLoaded = false;
+    function loadMap() {
+      if (mapLoaded) return;
+      mapLoaded = true;
+      const box = document.getElementById("map-box");
+      const iframe = document.createElement("iframe");
+      iframe.src = MAP_EMBED_URL;
+      iframe.title = "Mapa de ubicación de FisioVida en Zaragoza";
+      iframe.loading = "lazy";
+      iframe.referrerPolicy = "no-referrer-when-downgrade";
+      iframe.setAttribute("allowfullscreen", "");
+      box.innerHTML = "";
+      box.appendChild(iframe);
+    }
+
+    const consent = getConsent();
+    if (consent === "accepted") loadMap();
+    else if (consent !== "rejected") showBanner();
+
+    document.getElementById("cookie-accept").addEventListener("click", function () { setConsent("accepted"); hideBanner(); loadMap(); });
+    document.getElementById("cookie-reject").addEventListener("click", function () { setConsent("rejected"); hideBanner(); });
+    document.getElementById("cookie-settings").addEventListener("click", function () { showBanner(); document.getElementById("cookie-reject").focus(); });
+    document.getElementById("load-map").addEventListener("click", function () { setConsent("accepted"); hideBanner(); loadMap(); });
+
+    /* ---------- Modales legales ---------- */
+    let lastTrigger = null;
+    document.querySelectorAll("[data-open]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        const dlg = document.getElementById(btn.getAttribute("data-open"));
+        if (!dlg) return;
+        lastTrigger = btn;
+        if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.setAttribute("open", "");
+        const closeBtn = dlg.querySelector("[data-close]");
+        if (closeBtn) closeBtn.focus();
+      });
+    });
+    document.querySelectorAll("dialog.legal").forEach(function (dlg) {
+      dlg.querySelector("[data-close]").addEventListener("click", function () { dlg.close(); });
+      dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); }); // clic en el fondo
+      dlg.addEventListener("close", function () { if (lastTrigger) lastTrigger.focus(); });
+    });
+
+    /* ---------- Formulario de contacto ---------- */
+    const form = document.getElementById("contact-form");
+    const statusEl = document.getElementById("form-status");
+    const submitBtn = document.getElementById("submit-btn");
+    const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    const phoneRe = /^[+\d][\d\s().-]{6,}$/;
+
+    function setError(field, msg) {
+      const err = document.getElementById(field.id + "-error");
+      if (msg) { field.setAttribute("aria-invalid", "true"); err.textContent = msg; }
+      else { field.removeAttribute("aria-invalid"); err.textContent = ""; }
+    }
+
+    function validate() {
+      const f = form.elements;
+      const checks = [
+        [f.nombre, f.nombre.value.trim().length < 2 ? "Escribe tu nombre." : ""],
+        [f.email, !f.email.value.trim() ? "Escribe tu correo electrónico." : (!emailRe.test(f.email.value.trim()) ? "Revisa el formato del correo (ej.: nombre@dominio.es)." : "")],
+        [f.telefono, (f.telefono.value.trim() && !phoneRe.test(f.telefono.value.trim())) ? "Revisa el número de teléfono." :
+                     (f.motivo.value === "cita" && !f.telefono.value.trim() ? "Indica un teléfono para que podamos llamarte y darte cita." : "")],
+        [f.motivo, !f.motivo.value ? "Selecciona un motivo." : ""],
+        [f.mensaje, f.mensaje.value.trim().length < 5 ? "Escribe tu mensaje." : ""],
+        [f.privacidad, !f.privacidad.checked ? "Debes aceptar la política de privacidad para enviar el formulario." : ""]
+      ];
+      let first = null;
+      checks.forEach(function (c) { setError(c[0], c[1]); if (c[1] && !first) first = c[0]; });
+      return first;
+    }
+
+    ["nombre", "email", "telefono", "motivo", "mensaje", "privacidad"].forEach(function (id) {
+      const el = document.getElementById(id);
+      el.addEventListener("change", function () { if (el.getAttribute("aria-invalid") === "true") validate(); });
+    });
+
+    function setStatus(type, msg) {
+      statusEl.className = "form-status" + (type ? " is-" + type : "");
+      statusEl.textContent = msg;
+    }
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      setStatus("", "");
+      const firstInvalid = validate();
+      if (firstInvalid) {
+        firstInvalid.focus();
+        setStatus("error", "Revisa los campos marcados antes de enviar.");
+        return;
+      }
+      if (form.elements._gotcha.value) { form.reset(); return; } // bot
+
+      if (FORM_ENDPOINT.indexOf("[ID_FORMULARIO]") !== -1) {
+        setStatus("error", "El formulario aún no está conectado. Mientras tanto, llámanos al [TELÉFONO].");
+        return;
+      }
+
+      submitBtn.disabled = true;
+      const original = submitBtn.textContent;
+      submitBtn.textContent = "Enviando…";
+      setStatus("", "Enviando tu mensaje…");
+
+      const data = new FormData(form);
+      data.set("privacidad", "aceptada");
+      try {
+        const res = await fetch(FORM_ENDPOINT, {
+          method: "POST",
+          body: data,
+          headers: { "Accept": "application/json" }
+        });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        form.reset();
+        setStatus("success", "¡Gracias! Hemos recibido tu mensaje y te responderemos lo antes posible.");
+      } catch (err) {
+        setStatus("error", "No hemos podido enviar tu mensaje. Inténtalo de nuevo o llámanos al [TELÉFONO].");
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = original;
+      }
+    });
+  })();
+  </script>
+</body>
+</html>

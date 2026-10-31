@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Centro de Salud Las Águilas – Atención Primaria en Madrid | SERMAS</title>
+  <meta name="description" content="Centro de Salud Las Águilas, centro de Atención Primaria del Servicio Madrileño de Salud en Madrid. Medicina de familia, pediatría, enfermería y matrona. Urgencias (SAR) L–V de 20:30 a 8:30 y fines de semana y festivos 24 h.">
+  <meta name="theme-color" content="#0b6b5a">
+  <!-- REEMPLAZAR: URL definitiva del sitio -->
+  <link rel="canonical" href="https://[DOMINIO]/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Centro de Salud Las Águilas – Atención Primaria en Madrid">
+  <meta property="og:description" content="Medicina de familia, pediatría, enfermería y matrona. Servicio de Atención Rural (urgencias) L–V 20:30–8:30 y fines de semana y festivos 24 h.">
+  <meta property="og:url" content="https://[DOMINIO]/">
+  <meta property="og:image" content="https://[DOMINIO]/[IMAGEN_OG].jpg">
+
+  <!-- Tipografía -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Datos estructurados schema.org (REEMPLAZAR los marcadores entre corchetes) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Centro de Salud Las Águilas",
+    "description": "Centro de Atención Primaria del Servicio Madrileño de Salud (SERMAS). Funciona como Servicio de Atención Rural (urgencias) fuera del horario ordinario.",
+    "url": "https://[DOMINIO]/",
+    "telephone": "[TELÉFONO]",
+    "email": "[EMAIL]",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[DIRECCIÓN]",
+      "postalCode": "[CÓDIGO POSTAL]",
+      "addressLocality": "Madrid",
+      "addressRegion": "Comunidad de Madrid",
+      "addressCountry": "ES"
+    },
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Servicio Madrileño de Salud (SERMAS)"
+    },
+    "medicalSpecialty": ["PrimaryCare", "Pediatric", "Nursing", "Obstetric", "Emergency"],
+    "availableService": [
+      {"@type": "MedicalTherapy", "name": "Medicina de familia"},
+      {"@type": "MedicalTherapy", "name": "Pediatría"},
+      {"@type": "MedicalTherapy", "name": "Enfermería"},
+      {"@type": "MedicalTherapy", "name": "Matrona"},
+      {"@type": "MedicalTherapy", "name": "Servicio de Atención Rural (urgencias)"}
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "name": "Atención ordinaria",
+        "description": "[HORARIO DE ATENCIÓN ORDINARIA]",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "[HORA APERTURA]",
+        "closes": "[HORA CIERRE]"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "name": "Servicio de Atención Rural (urgencias) – noches entre semana",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "20:30",
+        "closes": "08:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "name": "Servicio de Atención Rural (urgencias) – fines de semana y festivos",
+        "dayOfWeek": ["Saturday", "Sunday", "PublicHolidays"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ==========================================================
+       Variables de marca: cambia aquí colores y tipografía
+       ========================================================== */
+    :root {
+      --color-primary: #0b6b5a;        /* verde sanitario oscuro: 6.4:1 sobre blanco */
+      --color-primary-dark: #08513f;
+      --color-primary-soft: #e6f3f0;
+      --color-accent: #2b5d9c;         /* azul suave de acento: 6.6:1 sobre blanco */
+      --color-accent-soft: #eaf1fa;
+      --color-alert: #a3202b;          /* rojo emergencias: 7:1 sobre blanco */
+      --color-alert-soft: #fdecee;
+      --color-text: #1d2a33;
+      --color-muted: #4a5a66;          /* 7:1 sobre blanco */
+      --color-bg: #ffffff;
+      --color-bg-alt: #f5f8f9;
+      --color-border: #d8e1e5;
+      --radius: 14px;
+      --radius-sm: 10px;
+      --shadow: 0 2px 6px rgba(16, 42, 51, .06), 0 8px 24px rgba(16, 42, 51, .06);
+      --font: "Source Sans 3", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+      --header-h: 72px;
+      --max-w: 1160px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      font-size: 1.0625rem;  /* 17 px */
+      line-height: 1.6;
+      color: var(--color-text);
+      background: var(--color-bg);
+    }
+    @media (min-width: 768px) { body { font-size: 1.125rem; } } /* 18 px */
+    img, svg { max-width: 100%; display: block; }
+    a { color: var(--color-primary); text-underline-offset: 3px; }
+    a:hover { color: var(--color-primary-dark); }
+    h1, h2, h3 { line-height: 1.2; margin: 0 0 .6em; color: var(--color-text); }
+    h1 { font-size: clamp(2rem, 5vw, 3.1rem); }
+    h2 { font-size: clamp(1.6rem, 3.5vw, 2.25rem); }
+    h3 { font-size: 1.25rem; }
+    p { margin: 0 0 1em; }
+
+    :focus-visible {
+      outline: 3px solid var(--color-accent);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    .container { width: 100%; max-width: var(--max-w); margin: 0 auto; padding: 0 1.25rem; }
+    section[id], [id].anchor { scroll-margin-top: calc(var(--header-h) + 16px); }
+    .section { padding: 4.5rem 0; }
+    .section--alt { background: var(--color-bg-alt); }
+    .section__intro { max-width: 46rem; color: var(--color-muted); margin-bottom: 2.25rem; }
+    .eyebrow {
+      display: inline-block; font-weight: 700; font-size: .9rem; letter-spacing: .06em;
+      text-transform: uppercase; color: var(--color-primary); margin-bottom: .5rem;
+    }
+    .visually-hidden {
+      position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+    /* Saltar al contenido */
+    .skip-link {
+      position: absolute; left: 1rem; top: -100px; z-index: 1000;
+      background: var(--color-primary); color: #fff; padding: .75rem 1.25rem;
+      border-radius: var(--radius-sm); font-weight: 700; text-decoration: none;
+    }
+    .skip-link:focus { top: 1rem; color: #fff; }
+
+    /* Botones */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+      min-height: 48px; padding: .7rem 1.4rem; border-radius: 999px;
+      font: inherit; font-weight: 700; text-decoration: none; cursor: pointer;
+      border: 2px solid transparent; transition: background-color .2s, color .2s, border-color .2s, transform .2s;
+    }
+    .btn, .primary-nav a, .brand__name { white-space: nowrap; }
+    .btn svg { width: 20px; height: 20px; flex: none; }
+    .btn--primary { background: var(--color-primary); color: #fff; }
+    .btn--primary:hover { background: var(--color-primary-dark); color: #fff; }
+    .btn--outline { background: #fff; color: var(--color-primary); border-color: var(--color-primary); }
+    .btn--outline:hover { background: var(--color-primary-soft); color: var(--color-primary-dark); }
+    .btn--alert { background: var(--color-alert); color: #fff; }
+    .btn--alert:hover { background: #7f1821; color: #fff; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: .75rem; }
+
+    /* Header */
+    .site-header {
+      position: fixed; inset: 0 0 auto 0; z-index: 100; height: var(--header-h);
+      background: rgba(255,255,255,.97); border-bottom: 1px solid var(--color-border);
+      backdrop-filter: saturate(1.4) blur(6px);
+    }
+    .site-header .container { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .brand { display: flex; align-items: center; gap: .65rem; text-decoration: none; color: var(--color-text); }
+    .brand svg { width: 40px; height: 40px; flex: none; }
+    .brand__name { font-weight: 700; font-size: 1.1rem; line-height: 1.1; }
+    .brand__sub { display: block; font-weight: 400; font-size: .85rem; color: var(--color-muted); }
+    .header-actions { display: flex; align-items: center; gap: .5rem; }
+    .header-call { display: none; }
+    .nav-toggle {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 48px; height: 48px; border-radius: 12px; border: 1px solid var(--color-border);
+      background: #fff; color: var(--color-text); cursor: pointer;
+    }
+    .nav-toggle svg { width: 26px; height: 26px; }
+    .primary-nav {
+      position: fixed; top: var(--header-h); left: 0; right: 0;
+      background: #fff; border-bottom: 1px solid var(--color-border); box-shadow: var(--shadow);
+      display: none;
+    }
+    .primary-nav.is-open { display: block; }
+    .primary-nav ul { list-style: none; margin: 0; padding: .5rem 1.25rem 1rem; }
+    .primary-nav a {
+      display: flex; align-items: center; min-height: 48px; padding: 0 .5rem;
+      text-decoration: none; color: var(--color-text); font-weight: 600; border-radius: 8px;
+    }
+    .primary-nav a:hover { background: var(--color-primary-soft); color: var(--color-primary-dark); }
+    .primary-nav .nav-call { margin-top: .5rem; }
+    .primary-nav .nav-call a { justify-content: center; background: var(--color-primary); color: #fff; border-radius: 999px; }
+
+    @media (min-width: 1180px) {
+      .nav-toggle { display: none; }
+      .primary-nav { position: static; display: block; background: none; border: 0; box-shadow: none; }
+      .primary-nav ul { display: flex; gap: .15rem; padding: 0; }
+      .primary-nav a { padding: 0 .7rem; font-size: 1rem; }
+      .primary-nav .nav-call { display: none; }
+      .header-call { display: inline-flex; }
+    }
+    @media (min-width: 1180px) and (max-width: 1239px) {
+      .brand__sub { display: none; }
+      .primary-nav a { padding: 0 .5rem; }
+    }
+
+    main { padding-top: var(--header-h); }
+
+    /* Hero */
+    .hero { background: linear-gradient(180deg, var(--color-primary-soft) 0%, #fff 100%); padding: 3.5rem 0 3rem; }
+    .hero .container { display: grid; gap: 2.5rem; align-items: center; }
+    .hero__lead { font-size: 1.2rem; color: var(--color-muted); max-width: 34rem; }
+    .hero__badges { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 1.75rem; padding: 0; list-style: none; }
+    .hero__badges li {
+      background: #fff; border: 1px solid var(--color-border); border-radius: 999px;
+      padding: .3rem .9rem; font-size: .95rem; font-weight: 600; color: var(--color-primary-dark);
+    }
+    .hero__art { max-width: 460px; margin: 0 auto; width: 100%; }
+    @media (min-width: 900px) {
+      .hero { padding: 5rem 0 4.5rem; }
+      .hero .container { grid-template-columns: 1.1fr .9fr; }
+    }
+
+    /* Franja de emergencias */
+    .emergency { background: var(--color-alert-soft); border-block: 1px solid #f2c3c8; }
+    .emergency .container {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: .75rem 1.5rem; padding-block: 1rem;
+    }
+    .emergency p { margin: 0; color: #5c1218; font-weight: 600; display: flex; gap: .75rem; align-items: center; }
+    .emergency svg.icon { width: 30px; height: 30px; color: var(--color-alert); flex: none; }
+    .emergency strong { color: var(--color-alert); font-size: 1.15em; }
+
+    /* Tarjetas */
+    .grid { display: grid; gap: 1.25rem; }
+    @media (min-width: 640px) { .grid--2, .grid--3, .grid--4 { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) {
+      .grid--3 { grid-template-columns: repeat(3, 1fr); }
+      .grid--4 { grid-template-columns: repeat(4, 1fr); }
+    }
+    .card {
+      background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius);
+      padding: 1.6rem; box-shadow: var(--shadow); height: 100%;
+    }
+    .card p:last-child { margin-bottom: 0; }
+    .card__icon {
+      width: 56px; height: 56px; border-radius: 14px; display: grid; place-items: center;
+      background: var(--color-primary-soft); color: var(--color-primary); margin-bottom: 1rem;
+    }
+    .card__icon svg { width: 30px; height: 30px; }
+    .card p { color: var(--color-muted); }
+
+    .icon-line { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+    /* Sobre nosotros */
+    .about { display: grid; gap: 2rem; }
+    @media (min-width: 900px) { .about { grid-template-columns: 1.2fr 1fr; align-items: start; } }
+    .values { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; }
+    .values li { display: flex; gap: .9rem; align-items: flex-start; background: #fff; border-radius: var(--radius); padding: 1.1rem 1.25rem; border: 1px solid var(--color-border); }
+    .values svg { width: 28px; height: 28px; color: var(--color-primary); flex: none; margin-top: .15rem; }
+    .values strong { display: block; }
+    .values span { color: var(--color-muted); }
+
+    /* Horarios */
+    .hours { display: grid; gap: 1.5rem; }
+    @media (min-width: 900px) { .hours { grid-template-columns: 1fr 1fr; } }
+    .hours__card { padding: 0; overflow: hidden; }
+    .hours__head { padding: 1.25rem 1.6rem; display: flex; align-items: center; gap: .8rem; }
+    .hours__head h3 { margin: 0; }
+    .hours__head svg { width: 30px; height: 30px; flex: none; }
+    .hours__head--ordinary { background: var(--color-primary-soft); color: var(--color-primary-dark); }
+    .hours__head--urgent { background: var(--color-accent-soft); color: var(--color-accent); }
+    .hours__body { padding: 1.25rem 1.6rem 1.6rem; }
+    table { width: 100%; border-collapse: collapse; }
+    caption { text-align: left; font-weight: 600; color: var(--color-muted); padding-bottom: .5rem; }
+    th, td { text-align: left; padding: .8rem .25rem; border-bottom: 1px solid var(--color-border); vertical-align: top; }
+    thead th { font-size: .9rem; text-transform: uppercase; letter-spacing: .05em; color: var(--color-muted); }
+    tbody th { font-weight: 600; }
+    td { font-weight: 700; color: var(--color-text); }
+    .note { font-size: .98rem; color: var(--color-muted); margin-top: 1rem; }
+    .placeholder { background: #fff6d6; padding: 0 .25em; border-radius: 4px; font-weight: 600; }
+
+    /* Trámite */
+    .procedure { display: grid; gap: 2rem; align-items: center; }
+    @media (min-width: 900px) { .procedure { grid-template-columns: 1fr 1fr; } }
+    .steps { counter-reset: step; list-style: none; padding: 0; margin: 0 0 1.75rem; display: grid; gap: 1rem; }
+    .steps li { counter-increment: step; display: grid; grid-template-columns: 44px 1fr; gap: .9rem; align-items: start; }
+    .steps li::before {
+      content: counter(step); width: 44px; height: 44px; border-radius: 50%;
+      display: grid; place-items: center; font-weight: 700; color: #fff; background: var(--color-primary);
+    }
+    .steps strong { display: block; }
+    .steps span { color: var(--color-muted); }
+    .callout {
+      border-left: 4px solid var(--color-accent); background: var(--color-accent-soft);
+      border-radius: var(--radius-sm); padding: 1rem 1.25rem; margin-bottom: 1.5rem;
+    }
+    .callout p { margin: 0; }
+
+    /* Contacto */
+    .contact { display: grid; gap: 2rem; }
+    @media (min-width: 960px) { .contact { grid-template-columns: 1.15fr .85fr; align-items: start; } }
+    .form-card { padding: 1.75rem; }
+    .warning {
+      display: flex; gap: .75rem; align-items: flex-start; background: #fff6d6; border: 1px solid #ecd48a;
+      border-radius: var(--radius-sm); padding: .9rem 1.1rem; margin-bottom: 1.5rem; color: #4d3b00; font-weight: 600;
+    }
+    .warning svg { width: 24px; height: 24px; flex: none; margin-top: .1rem; color: #7a5b00; }
+    .field { margin-bottom: 1.15rem; }
+    .field label { display: block; font-weight: 600; margin-bottom: .35rem; }
+    .field .opt { font-weight: 400; color: var(--color-muted); }
+    .field input, .field select, .field textarea {
+      width: 100%; min-height: 48px; padding: .7rem .9rem; font: inherit; color: var(--color-text);
+      background: #fff; border: 1.5px solid #8c9ba5; border-radius: var(--radius-sm);
+    }
+    .field textarea { min-height: 140px; resize: vertical; }
+    .field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible { outline-offset: 1px; border-color: var(--color-accent); }
+    .field [aria-invalid="true"] { border-color: var(--color-alert); background: #fffafa; }
+    .hint { font-size: .95rem; color: var(--color-muted); margin: .3rem 0 0; }
+    .error { font-size: .95rem; color: var(--color-alert); font-weight: 600; margin: .3rem 0 0; }
+    .error:empty { display: none; }
+    .req { color: var(--color-alert); }
+    .check { display: flex; gap: .75rem; align-items: flex-start; }
+    .check input { width: 24px; height: 24px; min-height: 0; margin: .15rem 0 0; flex: none; accent-color: var(--color-primary); }
+    .check label { font-weight: 400; margin: 0; }
+    .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    .form-status { margin-top: 1rem; border-radius: var(--radius-sm); font-weight: 600; }
+    .form-status:not(:empty) { padding: .9rem 1.1rem; }
+    .form-status.is-success { background: var(--color-primary-soft); color: var(--color-primary-dark); }
+    .form-status.is-error { background: var(--color-alert-soft); color: #5c1218; }
+    .form-status.is-sending { background: var(--color-bg-alt); color: var(--color-muted); }
+    button[disabled] { opacity: .7; cursor: progress; }
+
+    .contact-list { list-style: none; padding: 0; margin: 0 0 1.5rem; display: grid; gap: 1rem; }
+    .contact-list li { display: flex; gap: .9rem; align-items: flex-start; }
+    .contact-list svg { width: 26px; height: 26px; color: var(--color-primary); flex: none; margin-top: .15rem; }
+    .contact-list strong { display: block; }
+    .map {
+      border-radius: var(--radius); overflow: hidden; border: 1px solid var(--color-border);
+      background: var(--color-bg-alt); aspect-ratio: 4 / 3; position: relative;
+    }
+    .map iframe { width: 100%; height: 100%; border: 0; }
+    .map__placeholder {
+      position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 1.5rem; gap: .75rem;
+    }
+    .map__placeholder svg { flex: none; width: 48px; height: 48px; color: var(--color-primary); }
+    .map__placeholder p { margin: 0; color: var(--color-muted); font-size: .98rem; max-width: 22rem; }
+
+    /* Footer */
+    .site-footer { background: #10262e; color: #dbe6ea; padding: 3.5rem 0 6rem; }
+    @media (min-width: 1180px) { .site-footer { padding-bottom: 2rem; } }
+    .site-footer a { color: #ffffff; }
+    .site-footer h2 { color: #fff; font-size: 1.15rem; margin-bottom: .8rem; }
+    .footer-grid { display: grid; gap: 2rem; }
+    @media (min-width: 768px) { .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; } }
+    .footer-list { list-style: none; padding: 0; margin: 0; display: grid; gap: .35rem; }
+    .linklike {
+      background: none; border: 0; padding: .35rem 0; font: inherit; color: #fff; text-decoration: underline;
+      text-underline-offset: 3px; cursor: pointer; min-height: 44px; text-align: left;
+    }
+    .footer-bottom { border-top: 1px solid #2c4650; margin-top: 2.5rem; padding-top: 1.25rem; font-size: .95rem; color: #b9c9cf; }
+
+    /* Botón flotante (solo móvil) */
+    .fab-call {
+      position: fixed; right: 1rem; bottom: 1rem; z-index: 90;
+      box-shadow: 0 6px 20px rgba(11, 107, 90, .35);
+    }
+    @media (min-width: 1180px) { .fab-call { display: none; } }
+    body.has-cookie-banner .fab-call { display: none; }
+
+    /* Banner de cookies */
+    .cookie-banner {
+      position: fixed; left: 1rem; right: 1rem; bottom: 1rem; z-index: 200;
+      max-width: 720px; margin: 0 auto; background: #fff; border: 1px solid var(--color-border);
+      border-radius: var(--radius); box-shadow: 0 12px 40px rgba(16, 42, 51, .2); padding: 1.25rem 1.4rem;
+    }
+    .cookie-banner[hidden] { display: none; }
+    .cookie-banner h2 { font-size: 1.15rem; margin-bottom: .4rem; }
+    .cookie-banner p { font-size: 1rem; color: var(--color-muted); }
+    .cookie-banner .btn-row .btn { flex: 1 1 140px; }
+
+    /* Modales legales */
+    dialog.legal {
+      width: min(760px, calc(100% - 2rem)); max-height: calc(100vh - 2rem); padding: 0;
+      border: 0; border-radius: var(--radius); box-shadow: 0 20px 60px rgba(0,0,0,.3); color: var(--color-text);
+    }
+    dialog.legal::backdrop { background: rgba(16, 38, 46, .6); }
+    .legal__head {
+      position: sticky; top: 0; background: #fff; display: flex; justify-content: space-between; align-items: center;
+      gap: 1rem; padding: 1rem 1.5rem; border-bottom: 1px solid var(--color-border);
+    }
+    .legal__head h2 { margin: 0; font-size: 1.4rem; }
+    .legal__close {
+      width: 48px; height: 48px; border-radius: 12px; border: 1px solid var(--color-border);
+      background: #fff; cursor: pointer; display: grid; place-items: center; color: var(--color-text);
+    }
+    .legal__close svg { width: 24px; height: 24px; }
+    .legal__body { padding: 1.25rem 1.5rem 1.75rem; }
+    .legal__body h3 { font-size: 1.1rem; margin-top: 1.4rem; }
+    .legal__review { background: #fff6d6; border-radius: var(--radius-sm); padding: .8rem 1rem; font-weight: 600; }
+
+    /* Animaciones discretas */
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    .no-js .reveal { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body class="no-js">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#inicio" aria-label="Centro de Salud Las Águilas, ir al inicio">
+        <svg viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="11" fill="#0b6b5a"/>
+          <path d="M17 9h6v8h8v6h-8v8h-6v-8H9v-6h8z" fill="#fff"/>
+        </svg>
+        <span class="brand__name">C. S. Las Águilas<span class="brand__sub">Atención Primaria · SERMAS</span></span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="primary-nav" id="menu-principal" aria-label="Navegación principal">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#horarios">Horarios</a></li>
+            <li><a href="#certificado-digital">Certificado digital</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li class="nav-call"><a href="tel:+34000000000"><!-- REEMPLAZAR -->Llamar ahora</a></li>
+          </ul>
+        </nav>
+        <!-- REEMPLAZAR: tel:+34000000000 por el teléfono real del centro -->
+        <a class="btn btn--primary header-call" href="tel:+34000000000">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          Llamar ahora
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio" aria-labelledby="titulo-hero">
+      <div class="container">
+        <div class="reveal">
+          <span class="eyebrow">Servicio Madrileño de Salud</span>
+          <h1 id="titulo-hero">Centro de Salud Las Águilas</h1>
+          <p class="hero__lead">Tu centro de Atención Primaria de referencia. Cuidamos de tu salud y de la de tu familia en todas las etapas de la vida, y te atendemos también por la noche, los fines de semana y los festivos.</p>
+          <ul class="hero__badges" aria-label="Lo que ofrecemos">
+            <li>Medicina de familia</li>
+            <li>Pediatría</li>
+            <li>Enfermería</li>
+            <li>Matrona</li>
+            <li>Urgencias (SAR)</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="#contacto">Contactar</a>
+            <a class="btn btn--outline" href="#horarios">Ver horarios</a>
+          </div>
+        </div>
+
+        <div class="hero__art reveal" aria-hidden="true">
+          <!-- Ilustración decorativa -->
+          <svg viewBox="0 0 460 380" role="presentation">
+            <circle cx="240" cy="190" r="170" fill="#d4ebe5"/>
+            <circle cx="380" cy="80" r="34" fill="#eaf1fa"/>
+            <circle cx="80" cy="300" r="22" fill="#eaf1fa"/>
+            <!-- edificio -->
+            <rect x="120" y="120" width="240" height="190" rx="14" fill="#fff" stroke="#0b6b5a" stroke-width="3"/>
+            <rect x="120" y="120" width="240" height="38" rx="14" fill="#0b6b5a"/>
+            <rect x="120" y="140" width="240" height="18" fill="#0b6b5a"/>
+            <rect x="233" y="127" width="14" height="26" rx="2" fill="#fff"/>
+            <rect x="227" y="133" width="26" height="14" rx="2" fill="#fff"/>
+            <g fill="#eaf1fa" stroke="#2b5d9c" stroke-width="2">
+              <rect x="145" y="180" width="44" height="36" rx="6"/>
+              <rect x="218" y="180" width="44" height="36" rx="6"/>
+              <rect x="291" y="180" width="44" height="36" rx="6"/>
+              <rect x="145" y="236" width="44" height="36" rx="6"/>
+              <rect x="291" y="236" width="44" height="36" rx="6"/>
+            </g>
+            <rect x="214" y="236" width="52" height="74" rx="6" fill="#e6f3f0" stroke="#0b6b5a" stroke-width="2.5"/>
+            <circle cx="256" cy="276" r="3" fill="#0b6b5a"/>
+            <!-- suelo -->
+            <path d="M70 310h340" stroke="#0b6b5a" stroke-width="3" stroke-linecap="round"/>
+            <!-- árbol -->
+            <circle cx="92" cy="250" r="30" fill="#9fd0c3"/>
+            <rect x="89" y="270" width="6" height="40" rx="3" fill="#0b6b5a"/>
+            <!-- luna (atención nocturna) -->
+            <path d="M398 58a26 26 0 1 0 22 40 22 22 0 0 1-22-40z" fill="#2b5d9c" opacity=".85"/>
+            <!-- corazón -->
+            <path d="M388 250c-10-14-32-6-28 12 3 12 28 28 28 28s25-16 28-28c4-18-18-26-28-12z" fill="#fff" stroke="#a3202b" stroke-width="2.5"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EMERGENCIAS ===================== -->
+    <section class="emergency" aria-labelledby="titulo-emergencia">
+      <div class="container">
+        <h2 id="titulo-emergencia" class="visually-hidden">Aviso de emergencias</h2>
+        <p>
+          <svg class="icon icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0zM12 9v4M12 17h.01"/></svg>
+          <span>En caso de emergencia, llama al <strong>112</strong>. Es gratuito y funciona las 24 horas.</span>
+        </p>
+        <a class="btn btn--alert" href="tel:112">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          Llamar al 112
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE NOSOTROS ===================== -->
+    <section class="section" id="sobre-nosotros" aria-labelledby="titulo-sobre">
+      <div class="container about">
+        <div class="reveal">
+          <span class="eyebrow">Sobre nosotros</span>
+          <h2 id="titulo-sobre">Atención Primaria cercana, continuada y preventiva</h2>
+          <p>El Centro de Salud Las Águilas es un centro de Atención Primaria del Servicio Madrileño de Salud. Somos tu primer punto de contacto con el sistema sanitario público: aquí te conocemos, seguimos tu salud a lo largo del tiempo y te orientamos cuando necesitas otros recursos.</p>
+          <p>Nuestro equipo de medicina de familia, pediatría, enfermería y matrona trabaja de forma coordinada para atenderte cuando enfermas, acompañarte en tus procesos crónicos y ayudarte a prevenir la enfermedad.</p>
+          <p>Fuera del horario ordinario, el centro funciona como <strong>Servicio de Atención Rural (SAR)</strong> para urgencias: de lunes a viernes de 20:30 a 8:30 y los fines de semana y festivos, las 24 horas.</p>
+        </div>
+        <ul class="values reveal">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+            <div><strong>Cercanía</strong><span>Un trato humano y un equipo que te conoce.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 3"/></svg>
+            <div><strong>Continuidad</strong><span>Seguimiento de tu salud a lo largo de toda la vida.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <div><strong>Prevención</strong><span>Promoción de la salud y educación sanitaria.</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICIOS ===================== -->
+    <section class="section section--alt" id="servicios" aria-labelledby="titulo-servicios">
+      <div class="container">
+        <span class="eyebrow">Servicios</span>
+        <h2 id="titulo-servicios">Nuestros servicios</h2>
+        <p class="section__intro">Profesionales de Atención Primaria para cuidar de ti en cada etapa, con atención individual, diagnóstico, tratamiento y seguimiento.</p>
+
+        <ul class="grid grid--3" role="list" style="list-style:none;padding:0;margin:0">
+          <li class="reveal">
+            <article class="card">
+              <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M5 3v6a5 5 0 0 0 10 0V3M5 3H3M5 3h2M15 3h-2M15 3h2"/><path d="M10 14v2a5 5 0 0 0 10 0v-3"/><circle cx="20" cy="11" r="2"/></svg></div>
+              <h3>Medicina de familia</h3>
+              <p>Atención a personas adultas: diagnóstico, tratamiento y seguimiento de procesos agudos y crónicos.</p>
+            </article>
+          </li>
+          <li class="reveal">
+            <article class="card">
+              <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><circle cx="12" cy="8" r="4"/><path d="M10.5 7.5h.01M13.5 7.5h.01M10.5 9.5c.8.6 2.2.6 3 0"/><path d="M6 21v-2a6 6 0 0 1 12 0v2"/></svg></div>
+              <h3>Pediatría</h3>
+              <p>Cuidado de la salud de bebés, niños y niñas: revisiones, vacunación y atención cuando enferman.</p>
+            </article>
+          </li>
+          <li class="reveal">
+            <article class="card">
+              <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M12 10.5v6M9 13.5h6"/></svg></div>
+              <h3>Enfermería</h3>
+              <p>Curas, administración de tratamientos, control de enfermedades crónicas y educación para la salud.</p>
+            </article>
+          </li>
+          <li class="reveal">
+            <article class="card">
+              <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><circle cx="12" cy="5" r="2.5"/><path d="M12 8c-3 0-4 2.5-4 5h2l1 8h2l1-8"/><path d="M13 10.5a3.5 3.5 0 0 1 3 3.5"/></svg></div>
+              <h3>Matrona</h3>
+              <p>Acompañamiento durante el embarazo, preparación al parto, posparto y salud sexual y reproductiva.</p>
+            </article>
+          </li>
+          <li class="reveal">
+            <article class="card">
+              <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+              <h3>Urgencias (SAR)</h3>
+              <p>Atención urgente fuera del horario ordinario: de lunes a viernes de 20:30 a 8:30 y fines de semana y festivos 24 h.</p>
+            </article>
+          </li>
+          <li class="reveal">
+            <article class="card">
+              <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v6M9 11h6"/></svg></div>
+              <h3>Promoción y prevención</h3>
+              <p>Actividades de promoción de la salud, educación sanitaria y prevención de la enfermedad.</p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== HORARIOS ===================== -->
+    <section class="section" id="horarios" aria-labelledby="titulo-horarios">
+      <div class="container">
+        <span class="eyebrow">Horarios</span>
+        <h2 id="titulo-horarios">Horarios y atención de urgencias</h2>
+        <p class="section__intro">Consulta cuándo puedes venir a tus consultas habituales y cuándo funciona el Servicio de Atención Rural (SAR) para urgencias.</p>
+
+        <div class="hours">
+          <article class="card hours__card reveal" aria-labelledby="titulo-ordinario">
+            <div class="hours__head hours__head--ordinary">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <h3 id="titulo-ordinario">Atención ordinaria</h3>
+            </div>
+            <div class="hours__body">
+              <table>
+                <caption>Consultas de medicina de familia, pediatría, enfermería y matrona</caption>
+                <thead>
+                  <tr><th scope="col">Día</th><th scope="col">Horario</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Lunes a viernes</th><td><span class="placeholder">[HORARIO DE ATENCIÓN ORDINARIA]</span></td></tr>
+                  <tr><th scope="row">Sábados, domingos y festivos</th><td>Sin consultas ordinarias (funciona el SAR)</td></tr>
+                </tbody>
+              </table>
+              <p class="note">Para pedir cita en tus consultas habituales, llama al centro.</p>
+            </div>
+          </article>
+
+          <article class="card hours__card reveal" aria-labelledby="titulo-sar">
+            <div class="hours__head hours__head--urgent">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+              <h3 id="titulo-sar">Servicio de Atención Rural (urgencias)</h3>
+            </div>
+            <div class="hours__body">
+              <table>
+                <caption>Atención urgente fuera del horario ordinario</caption>
+                <thead>
+                  <tr><th scope="col">Día</th><th scope="col">Horario</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Lunes a viernes</th><td>De 20:30 a 8:30 h</td></tr>
+                  <tr><th scope="row">Sábados y domingos</th><td>24 horas</td></tr>
+                  <tr><th scope="row">Festivos</th><td>24 horas</td></tr>
+                </tbody>
+              </table>
+              <p class="note">El SAR atiende problemas de salud urgentes que no pueden esperar a tu consulta habitual. Ante una emergencia que ponga en riesgo la vida, llama al <a href="tel:112">112</a>.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICADO DIGITAL ===================== -->
+    <section class="section section--alt" id="certificado-digital" aria-labelledby="titulo-certificado">
+      <div class="container procedure">
+        <div class="reveal">
+          <span class="eyebrow">Trámites</span>
+          <h2 id="titulo-certificado">Certificado digital sanitario</h2>
+          <p>En el Centro de Salud Las Águilas puedes solicitar el certificado digital sanitario. Este trámite se realiza de forma presencial en el centro y <strong>requiere cita previa</strong>.</p>
+          <div class="callout">
+            <p><strong>La cita se pide por teléfono.</strong> No es posible solicitarla a través de esta web ni del formulario de contacto.</p>
+          </div>
+          <a class="btn btn--primary" href="tel:+34000000000"><!-- REEMPLAZAR -->
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            Llámanos para pedir cita
+          </a>
+        </div>
+        <div class="card reveal">
+          <h3>Cómo solicitarlo</h3>
+          <ol class="steps">
+            <li><div><strong>Llama al centro</strong><span>Pide cita previa para el certificado digital en el <span class="placeholder">[TELÉFONO]</span>.</span></div></li>
+            <li><div><strong>Consulta qué necesitas</strong><span>Al pedir la cita te indicaremos la documentación que debes traer: <span class="placeholder">[DOCUMENTACIÓN NECESARIA]</span>.</span></div></li>
+            <li><div><strong>Acude el día de tu cita</strong><span>Ven al centro a la hora indicada para completar el trámite en persona.</span></div></li>
+          </ol>
+          <p class="note">Quién puede solicitarlo y en qué horario: <span class="placeholder">[REQUISITOS Y HORARIO DEL TRÁMITE]</span>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="section" id="contacto" aria-labelledby="titulo-contacto">
+      <div class="container">
+        <span class="eyebrow">Contacto</span>
+        <h2 id="titulo-contacto">Contacta con nosotros</h2>
+        <p class="section__intro">Para pedir cita, llámanos. Si tienes una consulta general sobre el centro, también puedes escribirnos con este formulario.</p>
+
+        <div class="contact">
+          <div class="card form-card reveal">
+            <div class="warning" role="note">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0zM12 9v4M12 17h.01"/></svg>
+              <span>No incluyas datos clínicos ni información médica sensible en este formulario. Este formulario no sirve para pedir cita ni para urgencias.</span>
+            </div>
+
+            <form id="contact-form" novalidate>
+              <p class="hint" style="margin:0 0 1rem">Los campos marcados con <span class="req" aria-hidden="true">*</span><span class="visually-hidden">asterisco</span> son obligatorios.</p>
+
+              <div class="field">
+                <label for="nombre">Nombre y apellidos <span class="req" aria-hidden="true">*</span></label>
+                <input id="nombre" name="nombre" type="text" autocomplete="name" required aria-required="true" aria-describedby="nombre-error">
+                <p class="error" id="nombre-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="email">Correo electrónico <span class="req" aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-required="true" aria-describedby="email-error">
+                <p class="error" id="email-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="telefono">Teléfono <span class="opt">(opcional)</span></label>
+                <input id="telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="telefono-hint telefono-error">
+                <p class="hint" id="telefono-hint">Si prefieres que te llamemos.</p>
+                <p class="error" id="telefono-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="motivo">Motivo de la consulta <span class="req" aria-hidden="true">*</span></label>
+                <select id="motivo" name="motivo" required aria-required="true" aria-describedby="motivo-error">
+                  <option value="">Selecciona una opción</option>
+                  <option>Información general</option>
+                  <option>Horarios y Servicio de Atención Rural</option>
+                  <option>Certificado digital sanitario</option>
+                  <option>Sugerencias</option>
+                  <option>Otro</option>
+                </select>
+                <p class="error" id="motivo-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="mensaje">Mensaje <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="mensaje" name="mensaje" required aria-required="true" aria-describedby="mensaje-hint mensaje-error" maxlength="2000"></textarea>
+                <p class="hint" id="mensaje-hint">Recuerda: no incluyas síntomas, diagnósticos ni otros datos de salud.</p>
+                <p class="error" id="mensaje-error"></p>
+              </div>
+
+              <!-- Honeypot anti-spam: debe quedar vacío -->
+              <div class="hp" aria-hidden="true">
+                <label for="web">No rellenes este campo</label>
+                <input id="web" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="field">
+                <div class="check">
+                  <input id="privacidad" name="privacidad" type="checkbox" required aria-required="true" aria-describedby="privacidad-error">
+                  <label for="privacidad">He leído y acepto la <button type="button" class="linklike" style="color:var(--color-primary);min-height:0;padding:0" data-open="modal-privacidad">política de privacidad</button>. <span class="req" aria-hidden="true">*</span></label>
+                </div>
+                <p class="error" id="privacidad-error"></p>
+              </div>
+
+              <button class="btn btn--primary" type="submit" id="submit-btn">Enviar mensaje</button>
+              <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <aside class="reveal" aria-labelledby="titulo-datos">
+            <h3 id="titulo-datos">Datos de contacto</h3>
+            <ul class="contact-list">
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div><strong>Dirección</strong><span class="placeholder">[DIRECCIÓN]</span>, Madrid</div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+                <div><strong>Teléfono</strong><a href="tel:+34000000000"><!-- REEMPLAZAR -->[TELÉFONO]</a></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                <div><strong>Correo electrónico</strong><a href="mailto:[EMAIL]">[EMAIL]</a></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                <div><strong>Horario ordinario</strong><span class="placeholder">[HORARIO DE ATENCIÓN ORDINARIA]</span><br>Urgencias (SAR): L–V 20:30–8:30 · fines de semana y festivos 24 h</div>
+              </li>
+            </ul>
+
+            <div class="map" id="map">
+              <div class="map__placeholder" id="map-placeholder">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <p>El mapa usa Google Maps, que instala cookies de terceros. Se mostrará si aceptas las cookies.</p>
+                <button type="button" class="btn btn--outline" id="load-map">Cargar mapa</button>
+                <!-- REEMPLAZAR: enlace directo a Google Maps -->
+                <a href="[ENLACE GOOGLE MAPS]" target="_blank" rel="noopener">Abrir en Google Maps<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Centro de Salud Las Águilas</h2>
+          <p>Centro de Atención Primaria del Servicio Madrileño de Salud.</p>
+          <p>En caso de emergencia, llama al <a href="tel:112">112</a>.</p>
+        </div>
+        <div>
+          <h2>Contacto</h2>
+          <ul class="footer-list">
+            <li>[DIRECCIÓN], Madrid</li>
+            <li><a href="tel:+34000000000"><!-- REEMPLAZAR -->[TELÉFONO]</a></li>
+            <li><a href="mailto:[EMAIL]">[EMAIL]</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Información legal</h2>
+          <ul class="footer-list">
+            <li><button type="button" class="linklike" data-open="modal-aviso">Aviso legal</button></li>
+            <li><button type="button" class="linklike" data-open="modal-privacidad">Política de privacidad</button></li>
+            <li><button type="button" class="linklike" data-open="modal-cookies">Política de cookies</button></li>
+            <li><button type="button" class="linklike" id="cookie-settings">Configurar cookies</button></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; <span id="year">2026</span> Centro de Salud Las Águilas · Servicio Madrileño de Salud. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante "Llamar" (solo móvil) -->
+  <a class="btn btn--primary fab-call" href="tel:+34000000000" aria-label="Llamar al Centro de Salud Las Águilas"><!-- REEMPLAZAR -->
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+    Llamar
+  </a>
+
+  <!-- ===================== BANNER DE COOKIES ===================== -->
+  <div class="cookie-banner" id="cookie-banner" role="region" aria-labelledby="cookie-title" hidden>
+    <h2 id="cookie-title">Uso de cookies</h2>
+    <p>Usamos únicamente cookies técnicas necesarias. Con tu permiso, cargaremos también el mapa de Google Maps, que instala cookies de terceros. Puedes cambiar tu elección cuando quieras desde el pie de página. <button type="button" class="linklike" style="color:var(--color-primary);min-height:0;padding:0" data-open="modal-cookies">Más información</button>.</p>
+    <div class="btn-row">
+      <button type="button" class="btn btn--outline" id="cookie-reject">Rechazar</button>
+      <button type="button" class="btn btn--primary" id="cookie-accept">Aceptar</button>
+    </div>
+  </div>
+
+  <!-- ===================== MODALES LEGALES (texto placeholder) ===================== -->
+  <dialog class="legal" id="modal-aviso" aria-labelledby="aviso-title">
+    <div class="legal__head">
+      <h2 id="aviso-title">Aviso legal</h2>
+      <button type="button" class="legal__close" data-close aria-label="Cerrar aviso legal"><svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="legal__body">
+      <p class="legal__review">Texto de ejemplo. Debe revisarlo y completarlo un profesional jurídico antes de publicar.</p>
+      <h3>Titular del sitio web</h3>
+      <p>Razón social: [RAZÓN SOCIAL]. CIF: [CIF]. Domicilio: [DIRECCIÓN]. Correo electrónico: [EMAIL]. Teléfono: [TELÉFONO].</p>
+      <h3>Objeto</h3>
+      <p>Este sitio web ofrece información sobre el Centro de Salud Las Águilas, sus servicios, horarios y vías de contacto. No permite pedir cita, ni realizar consultas médicas, ni sustituye la atención sanitaria presencial.</p>
+      <h3>Condiciones de uso</h3>
+      <p>[CONDICIONES DE USO]</p>
+      <h3>Propiedad intelectual</h3>
+      <p>[TEXTO SOBRE PROPIEDAD INTELECTUAL E INDUSTRIAL]</p>
+      <h3>Responsabilidad</h3>
+      <p>La información publicada tiene carácter general. Ante una emergencia, llama al 112.</p>
+      <h3>Legislación aplicable</h3>
+      <p>Este sitio se rige por la legislación española, en particular la Ley 34/2002 de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE).</p>
+    </div>
+  </dialog>
+
+  <dialog class="legal" id="modal-privacidad" aria-labelledby="privacidad-title">
+    <div class="legal__head">
+      <h2 id="privacidad-title">Política de privacidad</h2>
+      <button type="button" class="legal__close" data-close aria-label="Cerrar política de privacidad"><svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="legal__body">
+      <p class="legal__review">Texto de ejemplo. Debe revisarlo y completarlo un profesional jurídico o el Delegado de Protección de Datos antes de publicar.</p>
+      <h3>Responsable del tratamiento</h3>
+      <p>[RAZÓN SOCIAL], CIF [CIF], con domicilio en [DIRECCIÓN]. Correo electrónico: [EMAIL].</p>
+      <h3>Delegado de Protección de Datos (DPD)</h3>
+      <p>Puedes contactar con el DPD en: [EMAIL DPD].</p>
+      <h3>Finalidad</h3>
+      <p>Atender las consultas generales que nos envíes mediante el formulario de contacto. El formulario no está destinado a recoger datos de salud: por favor, no los incluyas.</p>
+      <h3>Base jurídica</h3>
+      <p>Tu consentimiento, otorgado al marcar la casilla de aceptación (art. 6.1.a del Reglamento General de Protección de Datos, RGPD). [REVISAR BASE JURÍDICA APLICABLE]</p>
+      <h3>Destinatarios</h3>
+      <p>No se cederán datos a terceros salvo obligación legal. El envío del formulario se gestiona a través de [PROVEEDOR DEL SERVICIO DE FORMULARIOS], que actúa como encargado del tratamiento.</p>
+      <h3>Plazo de conservación</h3>
+      <p>[PLAZO DE CONSERVACIÓN]: el tiempo necesario para responder a tu consulta y, después, durante los plazos legalmente establecidos.</p>
+      <h3>Tus derechos</h3>
+      <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad escribiendo a [EMAIL] o [EMAIL DPD]. También puedes presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).</p>
+    </div>
+  </dialog>
+
+  <dialog class="legal" id="modal-cookies" aria-labelledby="cookies-title">
+    <div class="legal__head">
+      <h2 id="cookies-title">Política de cookies</h2>
+      <button type="button" class="legal__close" data-close aria-label="Cerrar política de cookies"><svg viewBox="0 0 24 24" aria-hidden="true" class="icon-line"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="legal__body">
+      <p class="legal__review">Texto de ejemplo. Debe revisarlo y completarlo un profesional jurídico antes de publicar.</p>
+      <h3>¿Qué son las cookies?</h3>
+      <p>Son pequeños archivos que un sitio web guarda en tu dispositivo para recordar información sobre tu visita.</p>
+      <h3>Cookies que utiliza este sitio</h3>
+      <ul>
+        <li><strong>Técnicas (necesarias):</strong> guardan únicamente tu elección sobre las cookies (almacenamiento local del navegador, clave <code>cookie-consent</code>). No requieren consentimiento.</li>
+        <li><strong>De terceros (Google Maps):</strong> solo se cargan si aceptas las cookies o pulsas «Cargar mapa». Consulta la política de privacidad de Google para más información.</li>
+      </ul>
+      <h3>Cómo cambiar tu elección</h3>
+      <p>Puedes cambiarla en cualquier momento desde «Configurar cookies» en el pie de página, o eliminar las cookies desde la configuración de tu navegador.</p>
+      <h3>Responsable</h3>
+      <p>[RAZÓN SOCIAL], CIF [CIF]. Contacto: [EMAIL].</p>
+    </div>
+  </dialog>
+
+  <script>
+  (function () {
+    "use strict";
+    document.body.classList.remove("no-js");
+
+    /* ==========================================================
+       CONFIGURACIÓN DEL FORMULARIO
+       Sustituye [ID_FORMULARIO] por el identificador de tu formulario
+       en Formspree (o pon aquí la URL de tu propio endpoint).
+       ========================================================== */
+    const FORM_ENDPOINT = "https://formspree.io/f/[ID_FORMULARIO]";
+
+    /* REEMPLAZAR: URL "embed" de Google Maps (Compartir > Insertar un mapa) */
+    const MAP_EMBED_URL = "[URL EMBED GOOGLE MAPS]";
+
+    const CONSENT_KEY = "cookie-consent";
+
+    // Año dinámico
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    /* ---------- Menú móvil ---------- */
+    const toggle = document.querySelector(".nav-toggle");
+    const menu = document.getElementById("menu-principal");
+    function setMenu(open) {
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+      menu.classList.toggle("is-open", open);
+    }
+    toggle.addEventListener("click", function () {
+      setMenu(toggle.getAttribute("aria-expanded") !== "true");
+    });
+    menu.addEventListener("click", function (e) {
+      if (e.target.closest("a")) setMenu(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+        setMenu(false);
+        toggle.focus();
+      }
+    });
+    window.matchMedia("(min-width: 1180px)").addEventListener("change", function (mq) {
+      if (mq.matches) setMenu(false);
+    });
+
+    /* ---------- Animaciones de aparición ---------- */
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const revealEls = document.querySelectorAll(".reveal");
+    if (reduce || !("IntersectionObserver" in window)) {
+      revealEls.forEach(function (el) { el.classList.add("is-visible"); });
+    } else {
+      const io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealEls.forEach(function (el) { io.observe(el); });
+    }
+
+    /* ---------- Modales legales ---------- */
+    let lastTrigger = null;
+    function openDialog(id, trigger) {
+      const dlg = document.getElementById(id);
+      if (!dlg) return;
+      lastTrigger = trigger || document.activeElement;
+      if (typeof dlg.showModal === "function") {
+        dlg.showModal();   // showModal atrapa el foco y cierra con Escape de forma nativa
+      } else {
+        dlg.setAttribute("open", "");
+      }
+      const closeBtn = dlg.querySelector("[data-close]");
+      if (closeBtn) closeBtn.focus();
+    }
+    document.querySelectorAll("[data-open]").forEach(function (btn) {
+      btn.addEventListener("click", function () { openDialog(btn.dataset.open, btn); });
+    });
+    document.querySelectorAll("dialog.legal").forEach(function (dlg) {
+      dlg.querySelector("[data-close]").addEventListener("click", function () { dlg.close(); });
+      dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); }); // clic en el fondo
+      dlg.addEventListener("close", function () { if (lastTrigger) lastTrigger.focus(); });
+    });
+
+    /* ---------- Cookies y mapa ---------- */
+    const banner = document.getElementById("cookie-banner");
+    function getConsent() {
+      try { return localStorage.getItem(CONSENT_KEY); } catch (e) { return null; }
+    }
+    function setConsent(value) {
+      try { localStorage.setItem(CONSENT_KEY, value); } catch (e) { /* sin almacenamiento */ }
+    }
+    function showBanner() {
+      banner.hidden = false;
+      document.body.classList.add("has-cookie-banner");
+    }
+    function hideBanner() {
+      banner.hidden = true;
+      document.body.classList.remove("has-cookie-banner");
+    }
+    function loadMap() {
+      const map = document.getElementById("map");
+      if (map.querySelector("iframe")) return;
+      if (MAP_EMBED_URL.indexOf("[") === 0) {
+        // Aún no se ha configurado la URL real: no cargamos nada.
+        document.getElementById("map-placeholder").querySelector("p").textContent =
+          "Mapa pendiente de configurar. Usa el enlace para abrir la ubicación en Google Maps.";
+        return;
+      }
+      const iframe = document.createElement("iframe");
+      iframe.src = MAP_EMBED_URL;
+      iframe.title = "Mapa de ubicación del Centro de Salud Las Águilas";
+      iframe.loading = "lazy";
+      iframe.referrerPolicy = "no-referrer-when-downgrade";
+      iframe.setAttribute("allowfullscreen", "");
+      map.innerHTML = "";
+      map.appendChild(iframe);
+    }
+    function unloadMap() {
+      const iframe = document.querySelector("#map iframe");
+      if (iframe) window.location.reload();
+    }
+
+    document.getElementById("cookie-accept").addEventListener("click", function () {
+      setConsent("accepted"); hideBanner(); loadMap();
+    });
+    document.getElementById("cookie-reject").addEventListener("click", function () {
+      setConsent("rejected"); hideBanner(); unloadMap();
+    });
+    document.getElementById("cookie-settings").addEventListener("click", function () {
+      showBanner();
+      document.getElementById("cookie-reject").focus();
+    });
+    document.getElementById("load-map").addEventListener("click", function () {
+      // Pulsar "Cargar mapa" equivale a aceptar las cookies de terceros del mapa.
+      setConsent("accepted"); hideBanner(); loadMap();
+    });
+
+    const consent = getConsent();
+    if (consent === "accepted") loadMap();
+    else if (consent !== "rejected") showBanner();
+
+    /* ---------- Formulario de contacto ---------- */
+    const form = document.getElementById("contact-form");
+    const statusEl = document.getElementById("form-status");
+    const submitBtn = document.getElementById("submit-btn");
+
+    const rules = {
+      nombre: function (el) { return el.value.trim().length >= 2 ? "" : "Escribe tu nombre."; },
+      email: function (el) {
+        const v = el.value.trim();
+        if (!v) return "Escribe tu correo electrónico.";
+        return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v) ? "" : "Escribe un correo electrónico válido, por ejemplo: nombre@correo.es.";
+      },
+      telefono: function (el) {
+        const v = el.value.trim();
+        return !v || /^[+\d][\d\s().-]{7,}$/.test(v) ? "" : "Escribe un teléfono válido o deja el campo vacío.";
+      },
+      motivo: function (el) { return el.value ? "" : "Selecciona el motivo de tu consulta."; },
+      mensaje: function (el) { return el.value.trim().length >= 10 ? "" : "Escribe tu mensaje (mínimo 10 caracteres)."; },
+      privacidad: function (el) { return el.checked ? "" : "Debes aceptar la política de privacidad para enviar el formulario."; }
+    };
+
+    function validateField(name) {
+      const el = form.elements[name];
+      const msg = rules[name](el);
+      const err = document.getElementById(name + "-error");
+      err.textContent = msg;
+      if (msg) el.setAttribute("aria-invalid", "true"); else el.removeAttribute("aria-invalid");
+      return !msg;
+    }
+
+    Object.keys(rules).forEach(function (name) {
+      const el = form.elements[name];
+      const evt = el.type === "checkbox" || el.tagName === "SELECT" ? "change" : "blur";
+      el.addEventListener(evt, function () {
+        if (el.getAttribute("aria-invalid") === "true" || el.value) validateField(name);
+      });
+    });
+
+    function setStatus(type, text) {
+      statusEl.className = "form-status" + (type ? " is-" + type : "");
+      statusEl.textContent = text;
+    }
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      let firstInvalid = null;
+      Object.keys(rules).forEach(function (name) {
+        if (!validateField(name) && !firstInvalid) firstInvalid = form.elements[name];
+      });
+      if (firstInvalid) {
+        setStatus("error", "Revisa los campos marcados para poder enviar el formulario.");
+        firstInvalid.focus();
+        return;
+      }
+      // Honeypot: si está relleno, es un bot. Simulamos éxito sin enviar.
+      if (form.elements["_gotcha"].value) {
+        form.reset();
+        setStatus("success", "Gracias. Hemos recibido tu mensaje.");
+        return;
+      }
+      if (FORM_ENDPOINT.indexOf("[ID_FORMULARIO]") !== -1) {
+        setStatus("error", "El formulario aún no está configurado. Mientras tanto, llámanos por teléfono.");
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Enviando…";
+      setStatus("sending", "Enviando tu mensaje…");
+
+      try {
+        const data = new FormData(form);
+        const res = await fetch(FORM_ENDPOINT, {
+          method: "POST",
+          body: data,
+          headers: { "Accept": "application/json" }
+        });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        form.reset();
+        setStatus("success", "Gracias. Hemos recibido tu mensaje y te responderemos lo antes posible.");
+      } catch (err) {
+        setStatus("error", "No hemos podido enviar tu mensaje. Inténtalo de nuevo más tarde o llámanos por teléfono.");
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Enviar mensaje";
+      }
+    });
+  })();
+  </script>
+</body>
+</html>

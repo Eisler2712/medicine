@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sonrisa Turia | Clínica dental en Valencia</title>
+  <meta name="description" content="Sonrisa Turia, clínica dental en Valencia. Implantes dentales, ortodoncia invisible, limpiezas, blanqueamiento y odontopediatría. Lunes a viernes de 9:00 a 14:00 y de 16:00 a 20:00.">
+  <meta name="theme-color" content="#0b5f66">
+  <!-- REEMPLAZAR: dominio definitivo -->
+  <link rel="canonical" href="https://[DOMINIO]/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Sonrisa Turia | Clínica dental en Valencia">
+  <meta property="og:description" content="Implantes, ortodoncia invisible, limpiezas, blanqueamiento y odontopediatría en Valencia.">
+  <meta property="og:url" content="https://[DOMINIO]/">
+  <meta property="og:image" content="https://[DOMINIO]/[IMAGEN-OG].jpg">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b5f66'/%3E%3Cpath d='M20 16c-6 0-9 5-8 11 1 5 3 8 4 14 1 5 2 9 5 9s3-6 5-10c1-2 2-3 6-3s5 1 6 3c2 4 2 10 5 10s4-4 5-9c1-6 3-9 4-14 1-6-2-11-8-11-4 0-6 2-12 2s-8-2-12-2z' fill='%23fff'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Datos estructurados (schema.org). REEMPLAZAR los marcadores entre corchetes. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Sonrisa Turia",
+    "description": "Clínica dental en Valencia: implantes, ortodoncia invisible, limpiezas, blanqueamiento y odontopediatría.",
+    "url": "https://[DOMINIO]/",
+    "telephone": "[TELÉFONO]",
+    "email": "[EMAIL]",
+    "image": "https://[DOMINIO]/[IMAGEN-OG].jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[DIRECCIÓN]",
+      "postalCode": "[CÓDIGO POSTAL]",
+      "addressLocality": "Valencia",
+      "addressRegion": "Comunidad Valenciana",
+      "addressCountry": "ES"
+    },
+    "medicalSpecialty": "Dentistry",
+    "availableService": [
+      { "@type": "MedicalProcedure", "name": "Implantes dentales" },
+      { "@type": "MedicalProcedure", "name": "Ortodoncia invisible" },
+      { "@type": "MedicalProcedure", "name": "Limpieza dental" },
+      { "@type": "MedicalProcedure", "name": "Blanqueamiento dental" },
+      { "@type": "MedicalProcedure", "name": "Odontopediatría" }
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "14:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "16:00",
+        "closes": "20:00"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* =========================================================
+       MARCA: cambia aquí los colores y la tipografía de toda la web
+       ========================================================= */
+    :root {
+      --color-primary: #0b5f66;        /* Verde azulado "Turia" (contraste 7.1:1 sobre blanco) */
+      --color-primary-dark: #08474d;
+      --color-primary-soft: #e3f2f1;
+      --color-accent: #f2a65a;         /* Acento cálido, solo decorativo */
+      --color-accent-soft: #fdf1e4;
+      --color-emergency: #b3261e;      /* Rojo de aviso (contraste 6.5:1 sobre blanco) */
+      --color-text: #1d2b30;
+      --color-muted: #4b5b61;          /* contraste 6.9:1 sobre blanco */
+      --color-bg: #ffffff;
+      --color-bg-alt: #f5f8f8;
+      --color-border: #d9e3e4;
+      --color-focus: #f2a65a;
+
+      --font-body: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --font-heading: "Nunito", "Source Sans 3", system-ui, sans-serif;
+
+      --radius: 14px;
+      --radius-sm: 10px;
+      --shadow: 0 6px 24px rgba(11, 95, 102, .08);
+      --shadow-lg: 0 14px 40px rgba(11, 95, 102, .14);
+      --header-h: 72px;
+      --max-w: 1160px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      font-size: 1.0625rem; /* 17px */
+      line-height: 1.6;
+      color: var(--color-text);
+      background: var(--color-bg);
+    }
+    @media (min-width: 768px) { body { font-size: 1.125rem; } }
+    img, svg { max-width: 100%; display: block; }
+    h1, h2, h3 { font-family: var(--font-heading); line-height: 1.2; color: var(--color-text); margin: 0 0 .6em; }
+    h1 { font-size: clamp(2.1rem, 5.5vw, 3.4rem); font-weight: 800; letter-spacing: -.01em; }
+    h2 { font-size: clamp(1.7rem, 3.6vw, 2.4rem); font-weight: 800; }
+    h3 { font-size: 1.25rem; font-weight: 700; }
+    p { margin: 0 0 1em; }
+    a { color: var(--color-primary); text-underline-offset: 3px; }
+    a:hover { color: var(--color-primary-dark); }
+
+    :focus-visible {
+      outline: 3px solid var(--color-focus);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+    section[id], [id].anchor { scroll-margin-top: calc(var(--header-h) + 16px); }
+
+    .container { width: 100%; max-width: var(--max-w); margin: 0 auto; padding: 0 20px; }
+    .section { padding: 72px 0; }
+    @media (min-width: 1024px) { .section { padding: 96px 0; } }
+    .section--alt { background: var(--color-bg-alt); }
+    .eyebrow {
+      display: inline-block; font-weight: 700; font-size: .875rem; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--color-primary); margin-bottom: .6rem;
+    }
+    .lead { font-size: 1.15em; color: var(--color-muted); max-width: 62ch; }
+    .section-head { max-width: 720px; margin-bottom: 40px; }
+    .section-head--center { text-align: center; margin-left: auto; margin-right: auto; }
+    .section-head--center .lead { margin-left: auto; margin-right: auto; }
+
+    .visually-hidden {
+      position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+    }
+    .skip-link {
+      position: absolute; left: 12px; top: -60px; z-index: 1000;
+      background: var(--color-primary); color: #fff; padding: 12px 18px; border-radius: var(--radius-sm);
+      font-weight: 700; text-decoration: none; transition: top .2s;
+    }
+    .skip-link:focus { top: 12px; color: #fff; }
+
+    /* ---------- Botones ---------- */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: .5em;
+      min-height: 48px; padding: 12px 24px; border-radius: 999px;
+      font: 700 1rem/1.2 var(--font-body); text-decoration: none; cursor: pointer;
+      border: 2px solid transparent; transition: background .2s, color .2s, box-shadow .2s, transform .2s;
+    }
+    .btn svg { width: 20px; height: 20px; flex: none; }
+    .btn--primary { background: var(--color-primary); color: #fff; }
+    .btn--primary:hover { background: var(--color-primary-dark); color: #fff; box-shadow: var(--shadow); transform: translateY(-1px); }
+    .btn--outline { background: #fff; color: var(--color-primary); border-color: var(--color-primary); }
+    .btn--outline:hover { background: var(--color-primary-soft); color: var(--color-primary-dark); }
+    .btn--sm { min-height: 44px; padding: 10px 18px; font-size: .95rem; }
+
+    /* ---------- Header ---------- */
+    .site-header {
+      position: fixed; inset: 0 0 auto 0; z-index: 100; height: var(--header-h);
+      background: rgba(255, 255, 255, .96); backdrop-filter: saturate(1.4) blur(8px);
+      border-bottom: 1px solid transparent; transition: border-color .2s, box-shadow .2s;
+    }
+    .site-header.is-scrolled { border-color: var(--color-border); box-shadow: 0 2px 16px rgba(0,0,0,.05); }
+    .header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand {
+      display: inline-flex; align-items: center; gap: 10px; text-decoration: none;
+      color: var(--color-text); font-family: var(--font-heading); font-weight: 800; font-size: 1.3rem; min-height: 44px;
+    }
+    .brand:hover { color: var(--color-text); }
+    .brand__logo { width: 40px; height: 40px; }
+    .brand span b { color: var(--color-primary); font-weight: 800; }
+
+    .nav-toggle {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 48px; height: 48px; border: 1px solid var(--color-border); border-radius: 12px;
+      background: #fff; color: var(--color-text); cursor: pointer;
+    }
+    .nav-toggle svg { width: 24px; height: 24px; }
+    .nav-toggle .icon-close { display: none; }
+    .nav-toggle[aria-expanded="true"] .icon-open { display: none; }
+    .nav-toggle[aria-expanded="true"] .icon-close { display: block; }
+
+    .main-nav {
+      position: fixed; top: var(--header-h); left: 0; right: 0;
+      background: #fff; border-bottom: 1px solid var(--color-border); box-shadow: var(--shadow-lg);
+      padding: 12px 20px 24px; display: none;
+    }
+    .main-nav.is-open { display: block; }
+    .main-nav ul { list-style: none; margin: 0; padding: 0; }
+    .main-nav a {
+      display: flex; align-items: center; min-height: 48px; padding: 8px 4px;
+      color: var(--color-text); text-decoration: none; font-weight: 600; border-bottom: 1px solid var(--color-bg-alt);
+    }
+    .main-nav a:hover { color: var(--color-primary); }
+    .main-nav .btn { margin-top: 16px; width: 100%; color: #fff; border-bottom: 0; }
+    .header-call { display: none; }
+
+    @media (min-width: 1000px) {
+      .nav-toggle { display: none; }
+      .main-nav {
+        position: static; display: block; padding: 0; border: 0; box-shadow: none; background: transparent;
+      }
+      .main-nav ul { display: flex; gap: 4px; align-items: center; }
+      .main-nav a { border: 0; padding: 8px 12px; border-radius: 8px; }
+      .main-nav a:hover { background: var(--color-primary-soft); }
+      .main-nav .nav-call-mobile { display: none; }
+      .header-call { display: inline-flex; }
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      padding: calc(var(--header-h) + 40px) 0 56px;
+      background:
+        radial-gradient(1200px 500px at 85% 10%, var(--color-primary-soft), transparent 60%),
+        radial-gradient(700px 400px at 0% 100%, var(--color-accent-soft), transparent 60%),
+        #fff;
+      overflow: hidden;
+    }
+    .hero-grid { display: grid; gap: 40px; align-items: center; }
+    @media (min-width: 900px) {
+      .hero { padding: calc(var(--header-h) + 72px) 0 96px; }
+      .hero-grid { grid-template-columns: 1.1fr .9fr; gap: 56px; }
+    }
+    .hero h1 .hl { color: var(--color-primary); }
+    .hero .lead { margin-bottom: 1.6em; }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+    .hero-facts {
+      display: flex; flex-wrap: wrap; gap: 10px 22px; list-style: none; padding: 0; margin: 32px 0 0;
+      color: var(--color-muted); font-weight: 600; font-size: .95rem;
+    }
+    .hero-facts li { display: flex; align-items: center; gap: 8px; }
+    .hero-facts svg { width: 20px; height: 20px; color: var(--color-primary); }
+    .hero-art { max-width: 480px; margin: 0 auto; width: 100%; }
+
+    /* ---------- Emergencias ---------- */
+    .emergency {
+      background: #fff5f4; border-top: 1px solid #f3d3d0; border-bottom: 1px solid #f3d3d0;
+    }
+    .emergency-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px 18px;
+      padding: 16px 20px; text-align: center; color: #5c1612;
+    }
+    .emergency svg { width: 26px; height: 26px; color: var(--color-emergency); flex: none; }
+    .emergency p { margin: 0; font-weight: 600; }
+    .emergency a {
+      display: inline-flex; align-items: center; min-height: 44px; padding: 6px 16px; border-radius: 999px;
+      background: var(--color-emergency); color: #fff; font-weight: 700; text-decoration: none;
+    }
+    .emergency a:hover { background: #8f1e18; color: #fff; }
+
+    /* ---------- Sobre nosotros ---------- */
+    .about-grid { display: grid; gap: 40px; align-items: center; }
+    @media (min-width: 900px) { .about-grid { grid-template-columns: .9fr 1.1fr; gap: 64px; } }
+    .values { display: grid; gap: 16px; list-style: none; padding: 0; margin: 28px 0 0; }
+    @media (min-width: 600px) { .values { grid-template-columns: 1fr 1fr; } }
+    .values li {
+      display: flex; gap: 14px; align-items: flex-start; padding: 18px; background: #fff;
+      border: 1px solid var(--color-border); border-radius: var(--radius);
+    }
+    .values strong { display: block; font-family: var(--font-heading); }
+    .values span { color: var(--color-muted); font-size: .95rem; }
+    .icon-badge {
+      flex: none; width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center;
+      background: var(--color-primary-soft); color: var(--color-primary);
+    }
+    .icon-badge svg { width: 24px; height: 24px; }
+    .about-art {
+      background: linear-gradient(160deg, var(--color-primary-soft), var(--color-accent-soft));
+      border-radius: 24px; padding: 32px; max-width: 460px; margin: 0 auto; width: 100%;
+    }
+
+    /* ---------- Tratamientos ---------- */
+    .cards { display: grid; gap: 20px; }
+    @media (min-width: 640px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+    .card {
+      background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius);
+      padding: 28px; box-shadow: var(--shadow); transition: transform .25s, box-shadow .25s;
+      display: flex; flex-direction: column;
+    }
+    .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .card .icon-badge { width: 56px; height: 56px; border-radius: 16px; margin-bottom: 18px; }
+    .card .icon-badge svg { width: 30px; height: 30px; }
+    .card p { color: var(--color-muted); margin-bottom: 0; }
+    .card--cta {
+      background: var(--color-primary); color: #fff; border-color: var(--color-primary);
+      justify-content: center;
+    }
+    .card--cta h3, .card--cta p { color: #fff; }
+    .card--cta .btn { margin-top: 20px; background: #fff; color: var(--color-primary); align-self: flex-start; }
+    .card--cta .btn:hover { background: var(--color-primary-soft); color: var(--color-primary-dark); }
+    .note { font-size: .95rem; color: var(--color-muted); margin-top: 28px; }
+
+    /* ---------- Horario ---------- */
+    .hours-grid { display: grid; gap: 24px; align-items: start; }
+    @media (min-width: 900px) { .hours-grid { grid-template-columns: 1.2fr .8fr; gap: 32px; } }
+    .table-wrap {
+      background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius);
+      box-shadow: var(--shadow); overflow-x: auto;
+    }
+    .hours-grid > *, .contact-grid > * { min-width: 0; }
+    table.hours { width: 100%; border-collapse: collapse; min-width: 280px; }
+    table.hours td { white-space: nowrap; }
+    table.hours caption {
+      text-align: left; padding: 22px 24px 6px; font-family: var(--font-heading); font-weight: 800; font-size: 1.2rem;
+    }
+    table.hours th, table.hours td { padding: 14px 24px; text-align: left; border-bottom: 1px solid var(--color-bg-alt); }
+    @media (max-width: 480px) {
+      table.hours { font-size: .95rem; }
+      table.hours th, table.hours td { padding: 12px 8px; }
+      table.hours th:first-child, table.hours td:first-child { padding-left: 14px; }
+      table.hours caption { padding: 18px 12px 6px; }
+    }
+    table.hours thead th { font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; color: var(--color-muted); }
+    table.hours tbody th { font-weight: 700; }
+    table.hours tbody tr:last-child th, table.hours tbody tr:last-child td { border-bottom: 0; }
+    table.hours tr.is-today { background: var(--color-primary-soft); }
+    .today-tag {
+      display: inline-block; margin-left: 6px; padding: 2px 8px; border-radius: 999px; font-size: .75rem;
+      background: var(--color-primary); color: #fff; font-weight: 700; vertical-align: middle;
+    }
+    .closed { color: var(--color-muted); }
+    .info-card {
+      background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius); padding: 24px;
+      box-shadow: var(--shadow);
+    }
+    .info-card + .info-card { margin-top: 20px; }
+    .info-card h3 { display: flex; align-items: center; gap: 10px; }
+    .info-card h3 svg { width: 24px; height: 24px; color: var(--color-primary); }
+    .info-card--warn { background: #fff5f4; border-color: #f3d3d0; }
+    .info-card--warn h3 svg { color: var(--color-emergency); }
+    .status-pill {
+      display: inline-flex; align-items: center; gap: 8px; font-weight: 700; padding: 6px 14px; border-radius: 999px;
+      background: var(--color-bg-alt); margin-bottom: 12px;
+    }
+    .status-pill::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--color-muted); }
+    .status-pill.is-open { background: var(--color-primary-soft); color: var(--color-primary-dark); }
+    .status-pill.is-open::before { background: #1e8a4c; }
+
+    /* ---------- Primera visita ---------- */
+    .steps { display: grid; gap: 20px; list-style: none; padding: 0; margin: 0; counter-reset: step; }
+    @media (min-width: 800px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+    .steps li {
+      position: relative; background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius);
+      padding: 28px 24px 24px; counter-increment: step;
+    }
+    .steps li::before {
+      content: counter(step); display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%;
+      background: var(--color-accent-soft); color: #7a4210; font: 800 1.1rem var(--font-heading); margin-bottom: 14px;
+    }
+    .steps p { color: var(--color-muted); margin: 0; }
+
+    /* ---------- Contacto ---------- */
+    .contact-grid { display: grid; gap: 32px; }
+    @media (min-width: 960px) { .contact-grid { grid-template-columns: 1.15fr .85fr; gap: 40px; } }
+    .form-card {
+      background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius);
+      padding: 24px; box-shadow: var(--shadow);
+    }
+    @media (min-width: 640px) { .form-card { padding: 32px; } }
+    .form-alert {
+      display: flex; gap: 12px; align-items: flex-start; padding: 14px 16px; border-radius: var(--radius-sm);
+      background: var(--color-accent-soft); color: #5a3210; margin-bottom: 24px; font-size: .97rem;
+    }
+    .form-alert svg { width: 22px; height: 22px; flex: none; margin-top: 2px; }
+    .form-row { display: grid; gap: 0 20px; }
+    @media (min-width: 640px) { .form-row { grid-template-columns: 1fr 1fr; } }
+    .field { margin-bottom: 20px; }
+    .field label { display: block; font-weight: 700; margin-bottom: 6px; }
+    .field .opt { font-weight: 400; color: var(--color-muted); }
+    .field .req { color: var(--color-emergency); }
+    .field input, .field select, .field textarea {
+      width: 100%; min-height: 48px; padding: 12px 14px; font: inherit; color: var(--color-text);
+      background: #fff; border: 1.5px solid #9fb0b3; border-radius: var(--radius-sm);
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .field textarea { min-height: 140px; resize: vertical; }
+    .field input:focus, .field select:focus, .field textarea:focus {
+      outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(11, 95, 102, .25);
+    }
+    .field [aria-invalid="true"] { border-color: var(--color-emergency); }
+    .field-error { display: block; color: var(--color-emergency); font-size: .92rem; font-weight: 600; margin-top: 6px; }
+    .field-error:empty { display: none; }
+    .field-hint { display: block; color: var(--color-muted); font-size: .92rem; margin-top: 6px; }
+    .check { display: flex; gap: 12px; align-items: flex-start; }
+    .check input { width: 24px; height: 24px; min-height: 0; margin: 2px 0 0; flex: none; accent-color: var(--color-primary); }
+    .check label { font-weight: 400; margin: 0; }
+    .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    .form-status { margin-top: 16px; padding: 0; border-radius: var(--radius-sm); font-weight: 600; }
+    .form-status:not(:empty) { padding: 14px 16px; }
+    .form-status.is-success { background: #e6f4ea; color: #1b5e33; }
+    .form-status.is-error { background: #fdecea; color: #8f1e18; }
+    .btn[disabled] { opacity: .7; cursor: progress; }
+
+    .contact-list { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 14px; }
+    .contact-list li { display: flex; gap: 14px; align-items: flex-start; }
+    .contact-list strong { display: block; }
+    .contact-list a { word-break: break-word; }
+    .map-box {
+      position: relative; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--color-border);
+      background: var(--color-bg-alt); width: 100%; height: 320px;
+    }
+    .map-box iframe { width: 100%; height: 100%; border: 0; display: block; }
+    .map-placeholder {
+      position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 12px; padding: 24px; text-align: center;
+      background:
+        repeating-linear-gradient(45deg, rgba(11,95,102,.04) 0 12px, transparent 12px 24px),
+        var(--color-bg-alt);
+    }
+    .map-placeholder p { margin: 0; color: var(--color-muted); max-width: 34ch; font-size: .95rem; }
+    .map-placeholder svg { width: 40px; height: 40px; color: var(--color-primary); }
+
+    /* ---------- Footer ---------- */
+    .site-footer { background: #0e2a2e; color: #d6e4e5; padding: 56px 0 28px; }
+    .site-footer a { color: #fff; }
+    .site-footer a:hover { color: var(--color-accent); }
+    .footer-grid { display: grid; gap: 32px; }
+    @media (min-width: 800px) { .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; } }
+    .site-footer h2 { color: #fff; font-size: 1.1rem; margin-bottom: 14px; }
+    .site-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+    .site-footer .brand { color: #fff; }
+    .site-footer .brand span b { color: #8fd3cf; }
+    .link-btn {
+      background: none; border: 0; padding: 0; font: inherit; color: #fff; text-decoration: underline;
+      text-underline-offset: 3px; cursor: pointer; min-height: 32px; text-align: left;
+    }
+    .link-btn:hover { color: var(--color-accent); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.15); margin-top: 40px; padding-top: 20px;
+      font-size: .92rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px;
+    }
+
+    /* ---------- Botón flotante (móvil) ---------- */
+    .fab-call {
+      position: fixed; right: 16px; bottom: 16px; z-index: 90;
+      display: inline-flex; align-items: center; gap: 8px; min-height: 56px; padding: 0 22px;
+      border-radius: 999px; background: var(--color-primary); color: #fff; font-weight: 700;
+      text-decoration: none; box-shadow: 0 10px 28px rgba(0,0,0,.25);
+    }
+    .fab-call:hover { color: #fff; background: var(--color-primary-dark); }
+    .fab-call svg { width: 22px; height: 22px; }
+    @media (min-width: 1000px) { .fab-call { display: none; } }
+    body.has-cookie-banner .fab-call { display: none; }
+
+    /* ---------- Banner de cookies ---------- */
+    .cookie-banner {
+      position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 200;
+      background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius);
+      box-shadow: 0 16px 48px rgba(0,0,0,.18); padding: 20px; max-width: 760px; margin: 0 auto;
+    }
+    .cookie-banner[hidden] { display: none; }
+    .cookie-banner h2 { font-size: 1.1rem; margin-bottom: 6px; }
+    .cookie-banner p { font-size: .97rem; color: var(--color-muted); margin-bottom: 14px; }
+    .cookie-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .cookie-actions .btn { flex: 1 1 140px; }
+
+    /* ---------- Modales legales ---------- */
+    dialog.legal {
+      width: min(760px, calc(100% - 24px)); max-height: calc(100vh - 48px); padding: 0;
+      border: 0; border-radius: var(--radius); box-shadow: 0 24px 64px rgba(0,0,0,.3); color: var(--color-text);
+    }
+    dialog.legal::backdrop { background: rgba(14, 42, 46, .6); }
+    .legal-head {
+      position: sticky; top: 0; display: flex; justify-content: space-between; align-items: center; gap: 12px;
+      padding: 18px 24px; background: #fff; border-bottom: 1px solid var(--color-border);
+    }
+    .legal-head h2 { margin: 0; font-size: 1.35rem; }
+    .legal-body { padding: 20px 24px 28px; }
+    .legal-body h3 { font-size: 1.05rem; margin-top: 1.4em; }
+    .legal-body p, .legal-body li { font-size: 1rem; }
+    .legal-warning {
+      background: var(--color-accent-soft); color: #5a3210; padding: 12px 14px; border-radius: var(--radius-sm); font-size: .95rem;
+    }
+    .close-btn {
+      width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--color-border); background: #fff;
+      display: grid; place-items: center; cursor: pointer; color: var(--color-text); flex: none;
+    }
+    .close-btn svg { width: 20px; height: 20px; }
+
+    /* ---------- Animaciones ---------- */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    .no-js .reveal { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body class="no-js">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Iconos SVG reutilizables (trazo lineal 1.8) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+      <!-- Iconos de tratamientos -->
+      <symbol id="i-implant" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3c-2 0-3.5 1.6-3 4 .3 1.4 1 2 1.5 3h13c.5-1 1.2-1.6 1.5-3 .5-2.4-1-4-3-4-1.6 0-2.4.8-5 .8S8.6 3 7 3z"/><path d="M8 13h8M8.5 16h7M9 19h6M10 22h4"/></symbol>
+      <symbol id="i-aligner" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9c0 6 4 10 9 10s9-4 9-10"/><path d="M6.5 9c0 4 2.4 6.5 5.5 6.5S17.5 13 17.5 9"/><path d="M3 9h3.5M17.5 9H21"/><path d="M9 5.5l.5 1.5M12 5v1.6M15 5.5l-.5 1.5"/></symbol>
+      <symbol id="i-clean" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4c-2.2 0-3.6 1.8-3 4.3.4 1.8 1.2 2.8 1.5 5 .3 2 .7 4.7 2 4.7 1.4 0 1.4-3 2.2-4.6.4-.8.8-1.2 1.8-1.2s1.4.4 1.8 1.2c.8 1.6.8 4.6 2.2 4.6 1.3 0 1.7-2.7 2-4.7.3-2.2 1.1-3.2 1.5-5C20.6 5.8 19.2 4 17 4c-1.8 0-2.6 1-5 1S9.8 4 8 4z"/><path d="M19 1.5v3M17.5 3h3"/></symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8zM5 15l.6 1.4L7 17l-1.4.6L5 19l-.6-1.4L3 17l1.4-.6z"/></symbol>
+      <symbol id="i-kid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.5a4.5 4.5 0 0 0 7 0"/><path d="M9 10h.01M15 10h.01"/><path d="M12 3c-1 1.2-1 2.6 0 3.5"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Sonrisa Turia, ir al inicio">
+        <svg class="brand__logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <rect width="48" height="48" rx="12" fill="#0b5f66"/>
+          <path d="M15.5 11c-4.6 0-7 3.8-6.2 8.4.6 3.6 2.2 5.8 2.9 10.4.6 3.8 1.3 7.2 3.7 7.2 2.6 0 2.6-5 4.1-7.8.7-1.4 1.4-2.1 4-2.1s3.3.7 4 2.1c1.5 2.8 1.5 7.8 4.1 7.8 2.4 0 3.1-3.4 3.7-7.2.7-4.6 2.3-6.8 2.9-10.4.8-4.6-1.6-8.4-6.2-8.4-3.2 0-4.6 1.6-8.5 1.6S18.7 11 15.5 11z" fill="#fff"/>
+          <path d="M14 33c3 2 6.5 3 10 3s7-1 10-3" stroke="#f2a65a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span>Sonrisa <b>Turia</b></span>
+      </a>
+
+      <nav aria-label="Principal">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+          <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon-close" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+        <div class="main-nav" id="menu-principal">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#clinica">La clínica</a></li>
+            <li><a href="#tratamientos">Tratamientos</a></li>
+            <li><a href="#horario">Horario</a></li>
+            <li><a href="#primera-visita">Primera visita</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li class="nav-call-mobile">
+              <!-- REEMPLAZAR: +34000000000 por el teléfono real -->
+              <a class="btn btn--primary" href="tel:+34000000000"><svg aria-hidden="true"><use href="#i-phone"/></svg>Llamar ahora</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- REEMPLAZAR: +34000000000 por el teléfono real -->
+      <a class="btn btn--primary btn--sm header-call" href="tel:+34000000000">
+        <svg aria-hidden="true"><use href="#i-phone"/></svg>Llamar ahora
+      </a>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">Clínica dental en Valencia</span>
+          <h1 id="hero-title">Sonrisa Turia: <span class="hl">cuidamos tu sonrisa</span> en cada etapa</h1>
+          <p class="lead">Implantes, ortodoncia invisible, limpiezas, blanqueamiento y odontopediatría. Te explicamos cada paso con calma para que decidas con tranquilidad.</p>
+          <div class="hero-ctas">
+            <a class="btn btn--primary" href="#contacto"><svg aria-hidden="true"><use href="#i-chat"/></svg>Contactar</a>
+            <a class="btn btn--outline" href="#horario"><svg aria-hidden="true"><use href="#i-clock"/></svg>Ver horario</a>
+          </div>
+          <ul class="hero-facts">
+            <li><svg aria-hidden="true"><use href="#i-clock"/></svg>L–V 9:00–14:00 y 16:00–20:00</li>
+            <li><svg aria-hidden="true"><use href="#i-pin"/></svg>Valencia</li>
+            <li><svg aria-hidden="true"><use href="#i-kid"/></svg>Adultos y niños</li>
+          </ul>
+        </div>
+
+        <div class="hero-art reveal" aria-hidden="true">
+          <svg viewBox="0 0 480 440" focusable="false">
+            <defs>
+              <linearGradient id="g-bg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#e3f2f1"/><stop offset="1" stop-color="#cfe9e6"/>
+              </linearGradient>
+              <linearGradient id="g-tooth" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef6f6"/>
+              </linearGradient>
+            </defs>
+            <circle cx="240" cy="210" r="190" fill="url(#g-bg)"/>
+            <!-- río Turia estilizado -->
+            <path d="M40 330c60-30 110 20 170-5s100-45 160-15 70 20 80 15" stroke="#9fd2cd" stroke-width="14" fill="none" stroke-linecap="round"/>
+            <path d="M70 362c50-20 95 12 150-6s95-36 150-10" stroke="#fbd9b5" stroke-width="10" fill="none" stroke-linecap="round"/>
+            <!-- diente -->
+            <path d="M168 92c-34 0-52 28-46 62 5 27 17 44 22 78 5 30 10 56 28 56 20 0 20-38 31-60 5-10 11-15 37-15s32 5 37 15c11 22 11 60 31 60 18 0 23-26 28-56 5-34 17-51 22-78 6-34-12-62-46-62-24 0-34 12-72 12s-48-12-72-12z" fill="url(#g-tooth)" stroke="#0b5f66" stroke-width="6" stroke-linejoin="round"/>
+            <!-- carita -->
+            <circle cx="208" cy="160" r="8" fill="#0b5f66"/>
+            <circle cx="272" cy="160" r="8" fill="#0b5f66"/>
+            <path d="M206 192c18 18 50 18 68 0" stroke="#0b5f66" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <circle cx="190" cy="186" r="9" fill="#f9c9a0" opacity=".8"/>
+            <circle cx="290" cy="186" r="9" fill="#f9c9a0" opacity=".8"/>
+            <!-- brillos -->
+            <path d="M372 92l7 20 20 7-20 7-7 20-7-20-20-7 20-7z" fill="#f2a65a"/>
+            <path d="M104 98l5 13 13 5-13 5-5 13-5-13-13-5 13-5z" fill="#0b5f66" opacity=".7"/>
+            <path d="M392 214l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#0b5f66" opacity=".5"/>
+            <path d="M150 116c-8 6-11 18-9 28" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EMERGENCIAS ================= -->
+    <section class="emergency" aria-labelledby="emergencia-titulo">
+      <div class="emergency-inner">
+        <svg aria-hidden="true"><use href="#i-alert"/></svg>
+        <p id="emergencia-titulo">En caso de emergencia médica, llama al 112.</p>
+        <a href="tel:112" aria-label="Llamar al 112, emergencias">Llamar al 112</a>
+      </div>
+    </section>
+
+    <!-- ================= LA CLÍNICA ================= -->
+    <section class="section" id="clinica" aria-labelledby="clinica-titulo">
+      <div class="container about-grid">
+        <div class="about-art reveal" aria-hidden="true">
+          <svg viewBox="0 0 400 320" focusable="false">
+            <rect x="40" y="60" width="320" height="220" rx="22" fill="#fff"/>
+            <rect x="40" y="60" width="320" height="56" rx="22" fill="#0b5f66"/>
+            <rect x="40" y="94" width="320" height="22" fill="#0b5f66"/>
+            <circle cx="200" cy="60" r="34" fill="#fff" stroke="#0b5f66" stroke-width="6"/>
+            <path d="M188 46c-7 0-10 5-9 11 1 4 3 6 3 11 1 4 2 8 4 8 3 0 3-5 4-8 1-1 2-2 5-2s4 1 5 2c1 3 1 8 4 8 2 0 3-4 4-8 0-5 2-7 3-11 1-6-2-11-9-11-3 0-5 2-11 2s-7-2-10-2z" fill="#0b5f66" transform="translate(-4 -4) scale(1.02)"/>
+            <rect x="72" y="146" width="110" height="100" rx="14" fill="#e3f2f1"/>
+            <rect x="218" y="146" width="110" height="100" rx="14" fill="#fdf1e4"/>
+            <path d="M96 210c10-18 22-28 31-28s21 10 31 28" stroke="#0b5f66" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <circle cx="127" cy="176" r="12" fill="#0b5f66"/>
+            <path d="M242 210c10-14 18-22 26-22s16 8 26 22" stroke="#c46d1c" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <circle cx="268" cy="180" r="10" fill="#c46d1c"/>
+            <path d="M0 300h400" stroke="#9fd2cd" stroke-width="6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">La clínica</span>
+          <h2 id="clinica-titulo">Odontología cercana, sin prisas y sin sorpresas</h2>
+          <p class="lead">En Sonrisa Turia queremos que vengas al dentista con tranquilidad. Escuchamos lo que te preocupa, revisamos tu boca con detalle y te explicamos con claridad las opciones de tratamiento antes de empezar.</p>
+          <p>Atendemos a toda la familia, desde las primeras revisiones de los más pequeños hasta tratamientos de rehabilitación en adultos, con un enfoque centrado en la prevención y en el seguimiento a largo plazo.</p>
+          <ul class="values">
+            <li><span class="icon-badge"><svg aria-hidden="true"><use href="#i-chat"/></svg></span><div><strong>Explicaciones claras</strong><span>Sabrás qué te hacemos y por qué.</span></div></li>
+            <li><span class="icon-badge"><svg aria-hidden="true"><use href="#i-shield"/></svg></span><div><strong>Prevención primero</strong><span>Revisiones e higiene para evitar problemas.</span></div></li>
+            <li><span class="icon-badge"><svg aria-hidden="true"><use href="#i-heart"/></svg></span><div><strong>Trato cercano</strong><span>Especial cuidado con pacientes con miedo al dentista.</span></div></li>
+            <li><span class="icon-badge"><svg aria-hidden="true"><use href="#i-calendar"/></svg></span><div><strong>Seguimiento</strong><span>Te acompañamos también después del tratamiento.</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRATAMIENTOS ================= -->
+    <section class="section section--alt" id="tratamientos" aria-labelledby="tratamientos-titulo">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Tratamientos</span>
+          <h2 id="tratamientos-titulo">Qué podemos hacer por ti</h2>
+          <p class="lead">Cada boca es distinta. Antes de cualquier tratamiento hacemos una valoración y te proponemos el plan que mejor se adapta a tu caso.</p>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <span class="icon-badge"><svg aria-hidden="true"><use href="#i-implant"/></svg></span>
+            <h3>Implantes dentales</h3>
+            <p>Reponemos piezas perdidas con implantes que devuelven la función al masticar y la estética de tu sonrisa, tras un estudio previo de tu caso.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon-badge"><svg aria-hidden="true"><use href="#i-aligner"/></svg></span>
+            <h3>Ortodoncia invisible</h3>
+            <p>Alineadores transparentes y removibles para corregir la posición de los dientes de forma discreta, en adolescentes y adultos.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon-badge"><svg aria-hidden="true"><use href="#i-clean"/></svg></span>
+            <h3>Limpieza dental</h3>
+            <p>Higiene profesional para eliminar sarro y placa, cuidar las encías y prevenir caries. Te damos pautas para mantener los resultados en casa.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon-badge"><svg aria-hidden="true"><use href="#i-sparkle"/></svg></span>
+            <h3>Blanqueamiento</h3>
+            <p>Aclaramos el tono de tus dientes de forma controlada y segura, siempre después de comprobar que tu boca está sana.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon-badge"><svg aria-hidden="true"><use href="#i-kid"/></svg></span>
+            <h3>Odontopediatría</h3>
+            <p>Revisiones y tratamientos para niños en un ambiente tranquilo, para que se acostumbren al dentista sin miedo desde pequeños.</p>
+          </article>
+          <article class="card card--cta reveal">
+            <h3>¿Tienes dudas sobre tu caso?</h3>
+            <p>Llámanos y te orientamos sobre qué tratamiento puede encajar contigo y cómo pedir tu primera cita.</p>
+            <!-- REEMPLAZAR: +34000000000 por el teléfono real -->
+            <a class="btn" href="tel:+34000000000"><svg aria-hidden="true"><use href="#i-phone"/></svg>Llamar a la clínica</a>
+          </article>
+        </div>
+        <p class="note reveal">La información de esta web es orientativa y no sustituye a una valoración profesional en consulta.</p>
+      </div>
+    </section>
+
+    <!-- ================= HORARIO ================= -->
+    <section class="section" id="horario" aria-labelledby="horario-titulo">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Horario</span>
+          <h2 id="horario-titulo">Cuándo puedes venir</h2>
+          <p class="lead">Atendemos con cita previa de lunes a viernes, en horario de mañana y de tarde.</p>
+        </div>
+        <div class="hours-grid">
+          <div class="table-wrap reveal">
+            <table class="hours">
+              <caption>Horario de la clínica</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Día</th>
+                  <th scope="col">Mañana</th>
+                  <th scope="col">Tarde</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-day="1"><th scope="row">Lunes</th><td>9:00 – 14:00</td><td>16:00 – 20:00</td></tr>
+                <tr data-day="2"><th scope="row">Martes</th><td>9:00 – 14:00</td><td>16:00 – 20:00</td></tr>
+                <tr data-day="3"><th scope="row">Miércoles</th><td>9:00 – 14:00</td><td>16:00 – 20:00</td></tr>
+                <tr data-day="4"><th scope="row">Jueves</th><td>9:00 – 14:00</td><td>16:00 – 20:00</td></tr>
+                <tr data-day="5"><th scope="row">Viernes</th><td>9:00 – 14:00</td><td>16:00 – 20:00</td></tr>
+                <tr data-day="6"><th scope="row">Sábado</th><td class="closed" colspan="2">Cerrado</td></tr>
+                <tr data-day="0"><th scope="row">Domingo</th><td class="closed" colspan="2">Cerrado</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <div class="info-card reveal">
+              <p class="status-pill" id="estado-apertura" aria-live="polite">Consultando horario…</p>
+              <h3><svg aria-hidden="true"><use href="#i-calendar"/></svg>Pide tu cita por teléfono</h3>
+              <p>Llámanos en horario de atención y buscaremos el día y la hora que mejor te vengan.</p>
+              <!-- REEMPLAZAR: +34000000000 por el teléfono real -->
+              <a class="btn btn--primary" href="tel:+34000000000"><svg aria-hidden="true"><use href="#i-phone"/></svg>Llamar ahora</a>
+            </div>
+            <div class="info-card info-card--warn reveal">
+              <h3><svg aria-hidden="true"><use href="#i-alert"/></svg>¿Dolor o urgencia dental?</h3>
+              <p>Si tienes dolor, inflamación o se te ha roto una pieza, llámanos en horario de clínica e intentaremos atenderte lo antes posible.</p>
+              <p style="margin:0">Fuera de horario, ante una emergencia grave (por ejemplo, un traumatismo fuerte, sangrado que no para o hinchazón que dificulta respirar o tragar), llama al <a href="tel:112"><strong>112</strong></a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRIMERA VISITA ================= -->
+    <section class="section section--alt" id="primera-visita" aria-labelledby="visita-titulo">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Primera visita</span>
+          <h2 id="visita-titulo">Así es tu primera cita</h2>
+          <p class="lead">Sin compromisos ni prisas: primero conocemos tu caso y después decides.</p>
+        </div>
+        <ol class="steps">
+          <li class="reveal">
+            <h3>Pide cita</h3>
+            <p>Llámanos o déjanos un mensaje en el formulario y te contactamos para concretar día y hora.</p>
+          </li>
+          <li class="reveal">
+            <h3>Revisión y diagnóstico</h3>
+            <p>Hablamos de lo que te preocupa y revisamos tu boca. Si es necesario, te indicamos las pruebas complementarias.</p>
+          </li>
+          <li class="reveal">
+            <h3>Plan a tu medida</h3>
+            <p>Te explicamos las opciones, los plazos y el presupuesto por escrito para que lo valores con calma.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+    <section class="section" id="contacto" aria-labelledby="contacto-titulo">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Contacto</span>
+          <h2 id="contacto-titulo">Hablemos</h2>
+          <p class="lead">Escríbenos y te responderemos lo antes posible en horario de clínica. Si prefieres, llámanos directamente.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="form-card reveal">
+            <div class="form-alert" role="note">
+              <svg aria-hidden="true"><use href="#i-shield"/></svg>
+              <p style="margin:0"><strong>No incluyas datos clínicos ni información médica sensible en este formulario.</strong> Lo hablaremos en persona o por teléfono.</p>
+            </div>
+
+            <form id="contact-form" novalidate>
+              <!-- Honeypot anti-spam: debe quedar vacío -->
+              <div class="hp" aria-hidden="true">
+                <label for="website">No rellenes este campo</label>
+                <input type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="nombre">Nombre <span class="req" aria-hidden="true">*</span></label>
+                  <input id="nombre" name="nombre" type="text" autocomplete="name" required aria-required="true" aria-describedby="nombre-error">
+                  <span class="field-error" id="nombre-error"></span>
+                </div>
+                <div class="field">
+                  <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+                  <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-required="true" aria-describedby="email-error">
+                  <span class="field-error" id="email-error"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="telefono">Teléfono <span class="opt">(opcional)</span></label>
+                  <input id="telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="telefono-hint telefono-error">
+                  <span class="field-hint" id="telefono-hint">Si prefieres que te llamemos.</span>
+                  <span class="field-error" id="telefono-error"></span>
+                </div>
+                <div class="field">
+                  <label for="motivo">Motivo <span class="req" aria-hidden="true">*</span></label>
+                  <select id="motivo" name="motivo" required aria-required="true" aria-describedby="motivo-error">
+                    <option value="">Selecciona una opción</option>
+                    <option>Pedir cita / primera visita</option>
+                    <option>Información sobre implantes</option>
+                    <option>Información sobre ortodoncia invisible</option>
+                    <option>Limpieza dental</option>
+                    <option>Blanqueamiento</option>
+                    <option>Odontopediatría</option>
+                    <option>Presupuestos</option>
+                    <option>Otro</option>
+                  </select>
+                  <span class="field-error" id="motivo-error"></span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="mensaje">Mensaje <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="mensaje" name="mensaje" required aria-required="true" aria-describedby="mensaje-hint mensaje-error"></textarea>
+                <span class="field-hint" id="mensaje-hint">Cuéntanos brevemente en qué podemos ayudarte, sin datos médicos.</span>
+                <span class="field-error" id="mensaje-error"></span>
+              </div>
+
+              <div class="field">
+                <div class="check">
+                  <input id="privacidad" name="privacidad" type="checkbox" required aria-required="true" aria-describedby="privacidad-error">
+                  <label for="privacidad">He leído y acepto la <a href="#" data-open="modal-privacidad">política de privacidad</a>. <span class="req" aria-hidden="true">*</span></label>
+                </div>
+                <span class="field-error" id="privacidad-error"></span>
+              </div>
+
+              <p style="font-size:.92rem;color:var(--color-muted)">Los campos marcados con <span class="req" aria-hidden="true">*</span><span class="visually-hidden">asterisco</span> son obligatorios.</p>
+
+              <button class="btn btn--primary" type="submit" id="submit-btn"><svg aria-hidden="true"><use href="#i-mail"/></svg><span>Enviar mensaje</span></button>
+              <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <aside class="reveal" aria-labelledby="datos-titulo">
+            <h3 id="datos-titulo">Datos de contacto</h3>
+            <ul class="contact-list">
+              <li><span class="icon-badge"><svg aria-hidden="true"><use href="#i-pin"/></svg></span><div><strong>Dirección</strong>[DIRECCIÓN], [CÓDIGO POSTAL] Valencia</div></li>
+              <li><span class="icon-badge"><svg aria-hidden="true"><use href="#i-phone"/></svg></span><div><strong>Teléfono</strong><!-- REEMPLAZAR --><a href="tel:+34000000000">[TELÉFONO]</a></div></li>
+              <li><span class="icon-badge"><svg aria-hidden="true"><use href="#i-mail"/></svg></span><div><strong>Email</strong><!-- REEMPLAZAR --><a href="mailto:[EMAIL]">[EMAIL]</a></div></li>
+              <li><span class="icon-badge"><svg aria-hidden="true"><use href="#i-clock"/></svg></span><div><strong>Horario</strong>Lunes a viernes, 9:00–14:00 y 16:00–20:00</div></li>
+            </ul>
+
+            <div class="map-box" id="map-box">
+              <div class="map-placeholder" id="map-placeholder">
+                <svg aria-hidden="true"><use href="#i-pin"/></svg>
+                <p>Para no instalar cookies de terceros sin tu permiso, el mapa de Google no se carga hasta que lo aceptes. Al pulsar «Cargar mapa» aceptas las cookies de Google Maps.</p>
+                <button type="button" class="btn btn--primary btn--sm" id="load-map">Cargar mapa</button>
+                <!-- REEMPLAZAR: enlace directo a la ficha de Google Maps de la clínica -->
+                <a href="[ENLACE GOOGLE MAPS]" target="_blank" rel="noopener">Abrir en Google Maps<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#inicio">
+            <svg class="brand__logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <rect width="48" height="48" rx="12" fill="#ffffff"/>
+              <path d="M15.5 11c-4.6 0-7 3.8-6.2 8.4.6 3.6 2.2 5.8 2.9 10.4.6 3.8 1.3 7.2 3.7 7.2 2.6 0 2.6-5 4.1-7.8.7-1.4 1.4-2.1 4-2.1s3.3.7 4 2.1c1.5 2.8 1.5 7.8 4.1 7.8 2.4 0 3.1-3.4 3.7-7.2.7-4.6 2.3-6.8 2.9-10.4.8-4.6-1.6-8.4-6.2-8.4-3.2 0-4.6 1.6-8.5 1.6S18.7 11 15.5 11z" fill="#0b5f66"/>
+            </svg>
+            <span>Sonrisa <b>Turia</b></span>
+          </a>
+          <p style="margin-top:12px">Clínica dental en Valencia. Implantes, ortodoncia invisible, limpiezas, blanqueamiento y odontopediatría.</p>
+        </div>
+        <div>
+          <h2>Contacto</h2>
+          <ul>
+            <li>[DIRECCIÓN], [CÓDIGO POSTAL] Valencia</li>
+            <li><!-- REEMPLAZAR --><a href="tel:+34000000000">[TELÉFONO]</a></li>
+            <li><a href="mailto:[EMAIL]">[EMAIL]</a></li>
+            <li>L–V 9:00–14:00 y 16:00–20:00</li>
+            <li>Emergencias: <a href="tel:112">112</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Información legal</h2>
+          <ul>
+            <li><button type="button" class="link-btn" data-open="modal-aviso">Aviso legal</button></li>
+            <li><button type="button" class="link-btn" data-open="modal-privacidad">Política de privacidad</button></li>
+            <li><button type="button" class="link-btn" data-open="modal-cookies">Política de cookies</button></li>
+            <li><button type="button" class="link-btn" id="reopen-cookies">Configurar cookies</button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="margin:0">© <span id="year">2026</span> Sonrisa Turia · [RAZÓN SOCIAL]</p>
+        <p style="margin:0"><a href="#top">Volver arriba</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante "Llamar" (solo móvil). REEMPLAZAR: +34000000000 -->
+  <a class="fab-call" href="tel:+34000000000" aria-label="Llamar a Sonrisa Turia">
+    <svg aria-hidden="true"><use href="#i-phone"/></svg>Llamar
+  </a>
+
+  <!-- ================= BANNER DE COOKIES ================= -->
+  <div class="cookie-banner" id="cookie-banner" role="region" aria-labelledby="cookie-title" hidden>
+    <h2 id="cookie-title">Tu privacidad</h2>
+    <p>Usamos solo cookies técnicas necesarias. Si aceptas, también cargaremos el mapa de Google Maps, que instala cookies de terceros. Puedes cambiar tu elección cuando quieras desde el pie de página. <button type="button" class="link-btn" style="color:var(--color-primary);min-height:0" data-open="modal-cookies">Más información</button></p>
+    <div class="cookie-actions">
+      <button type="button" class="btn btn--outline" id="cookies-reject">Rechazar</button>
+      <button type="button" class="btn btn--primary" id="cookies-accept">Aceptar</button>
+    </div>
+  </div>
+
+  <!-- ================= MODALES LEGALES (texto orientativo, revisar por un profesional) ================= -->
+  <dialog class="legal" id="modal-aviso" aria-labelledby="aviso-titulo">
+    <div class="legal-head">
+      <h2 id="aviso-titulo">Aviso legal</h2>
+      <button type="button" class="close-btn" data-close aria-label="Cerrar aviso legal"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="legal-body">
+      <p class="legal-warning">Texto orientativo. Debe revisarlo un profesional jurídico antes de publicar la web.</p>
+      <h3>Titular del sitio web</h3>
+      <p>En cumplimiento de la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de que este sitio web es titularidad de <strong>[RAZÓN SOCIAL]</strong>, con CIF <strong>[CIF]</strong> y domicilio en [DIRECCIÓN], [CÓDIGO POSTAL] Valencia. Contacto: [TELÉFONO] · [EMAIL].</p>
+      <p>Datos registrales: [DATOS REGISTRO MERCANTIL]. Número de registro sanitario del centro: [Nº REGISTRO SANITARIO]. Colegio profesional: Ilustre Colegio Oficial de Odontólogos y Estomatólogos de Valencia (ICOEV) [VERIFICAR].</p>
+      <h3>Objeto</h3>
+      <p>Este sitio web tiene carácter informativo sobre la clínica y sus servicios. Su contenido no constituye consejo médico ni sustituye a la consulta con un profesional.</p>
+      <h3>Propiedad intelectual</h3>
+      <p>Los contenidos, diseño y elementos gráficos de este sitio son propiedad de [RAZÓN SOCIAL] o se utilizan con autorización. Queda prohibida su reproducción sin permiso.</p>
+      <h3>Responsabilidad</h3>
+      <p>[RAZÓN SOCIAL] no se hace responsable del uso indebido de la información ni de los contenidos de sitios externos enlazados.</p>
+      <h3>Legislación aplicable</h3>
+      <p>Este aviso se rige por la legislación española.</p>
+    </div>
+  </dialog>
+
+  <dialog class="legal" id="modal-privacidad" aria-labelledby="privacidad-titulo">
+    <div class="legal-head">
+      <h2 id="privacidad-titulo">Política de privacidad</h2>
+      <button type="button" class="close-btn" data-close aria-label="Cerrar política de privacidad"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="legal-body">
+      <p class="legal-warning">Texto orientativo conforme al RGPD (UE 2016/679) y la LOPDGDD (LO 3/2018). Debe revisarlo un profesional antes de publicar la web.</p>
+      <h3>Responsable del tratamiento</h3>
+      <p>[RAZÓN SOCIAL], CIF [CIF], [DIRECCIÓN], [CÓDIGO POSTAL] Valencia. Email: [EMAIL]. Delegado de Protección de Datos (si procede): [CONTACTO DPD].</p>
+      <h3>Finalidad</h3>
+      <p>Atender las consultas que nos envíes a través del formulario de contacto, por email o por teléfono, y, si lo solicitas, contactarte para concertar una cita. El formulario no está destinado a recoger datos de salud: te pedimos que no los incluyas.</p>
+      <h3>Base jurídica</h3>
+      <p>Tu consentimiento, otorgado al marcar la casilla de aceptación (art. 6.1.a RGPD), y la aplicación de medidas precontractuales a petición tuya (art. 6.1.b RGPD).</p>
+      <h3>Conservación</h3>
+      <p>Conservaremos los datos el tiempo necesario para responder tu consulta y, después, durante los plazos legalmente exigidos. [PLAZO CONCRETO].</p>
+      <h3>Destinatarios</h3>
+      <p>No cedemos tus datos a terceros salvo obligación legal. El envío del formulario se gestiona a través de [PROVEEDOR DEL FORMULARIO, p. ej. Formspree], que actúa como encargado del tratamiento. [INDICAR SI HAY TRANSFERENCIAS INTERNACIONALES Y SUS GARANTÍAS].</p>
+      <h3>Tus derechos</h3>
+      <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad escribiendo a [EMAIL] o en [DIRECCIÓN], adjuntando copia de un documento que acredite tu identidad. También puedes retirar tu consentimiento en cualquier momento y presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).</p>
+    </div>
+  </dialog>
+
+  <dialog class="legal" id="modal-cookies" aria-labelledby="cookies-titulo">
+    <div class="legal-head">
+      <h2 id="cookies-titulo">Política de cookies</h2>
+      <button type="button" class="close-btn" data-close aria-label="Cerrar política de cookies"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="legal-body">
+      <p class="legal-warning">Texto orientativo. Debe revisarlo un profesional antes de publicar la web.</p>
+      <h3>¿Qué son las cookies?</h3>
+      <p>Son pequeños archivos que los sitios web guardan en tu navegador para recordar información sobre tu visita.</p>
+      <h3>Cookies y almacenamiento que usa este sitio</h3>
+      <ul>
+        <li><strong>Técnico (propio):</strong> guardamos en tu navegador únicamente tu elección sobre las cookies (aceptar o rechazar), para no volver a preguntarte. No requiere consentimiento.</li>
+        <li><strong>Google Maps (terceros):</strong> solo si aceptas, se carga el mapa de Google, que puede instalar cookies propias de Google con fines funcionales y analíticos. Más información en la política de privacidad de Google.</li>
+      </ul>
+      <p>Este sitio no utiliza cookies publicitarias ni de analítica propia. [ACTUALIZAR SI SE AÑADE ANALÍTICA].</p>
+      <h3>Cómo cambiar tu elección</h3>
+      <p>Puedes cambiarla en cualquier momento desde el enlace "Configurar cookies" del pie de página, o borrar las cookies desde la configuración de tu navegador.</p>
+    </div>
+  </dialog>
+
+  <script>
+  (function () {
+    "use strict";
+    document.body.classList.remove("no-js");
+
+    /* =========================================================
+       CONFIGURACIÓN
+       ========================================================= */
+    // Endpoint del servicio de envío del formulario (p. ej. Formspree).
+    // REEMPLAZAR [ID_FORMULARIO] por el ID que te da el servicio.
+    const FORM_ENDPOINT = "https://formspree.io/f/[ID_FORMULARIO]";
+
+    // URL de inserción de Google Maps (Google Maps > Compartir > Insertar un mapa > copiar el src del iframe).
+    // REEMPLAZAR. Mientras sea un marcador se muestra un mapa genérico de Valencia.
+    const MAP_EMBED_URL = "[URL INSERCIÓN GOOGLE MAPS]";
+    const MAP_FALLBACK_URL = "https://www.google.com/maps?q=Valencia,+Espa%C3%B1a&output=embed";
+
+    const CONSENT_KEY = "sonrisaturia_cookie_consent"; // solo guarda "accepted" o "rejected"
+
+    /* ---------- Año dinámico ---------- */
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    /* ---------- Header con sombra al hacer scroll ---------- */
+    const header = document.querySelector(".site-header");
+    const onScroll = () => header.classList.toggle("is-scrolled", window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    /* ---------- Menú móvil accesible ---------- */
+    const toggle = document.querySelector(".nav-toggle");
+    const menu = document.getElementById("menu-principal");
+    function setMenu(open) {
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+      menu.classList.toggle("is-open", open);
+    }
+    toggle.addEventListener("click", () => setMenu(toggle.getAttribute("aria-expanded") !== "true"));
+    menu.addEventListener("click", (e) => { if (e.target.closest("a")) setMenu(false); });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+        setMenu(false);
+        toggle.focus();
+      }
+    });
+    window.matchMedia("(min-width: 1000px)").addEventListener("change", (mq) => { if (mq.matches) setMenu(false); });
+
+    /* ---------- Día actual y estado abierto/cerrado (hora de Valencia) ---------- */
+    (function () {
+      const pill = document.getElementById("estado-apertura");
+      let day, minutes;
+      try {
+        const parts = new Intl.DateTimeFormat("en-GB", {
+          timeZone: "Europe/Madrid", weekday: "short", hour: "2-digit", minute: "2-digit", hour12: false
+        }).formatToParts(new Date());
+        const get = (t) => parts.find((p) => p.type === t).value;
+        day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(get("weekday"));
+        minutes = (parseInt(get("hour"), 10) % 24) * 60 + parseInt(get("minute"), 10);
+      } catch (err) {
+        const now = new Date(); day = now.getDay(); minutes = now.getHours() * 60 + now.getMinutes();
+      }
+      const row = document.querySelector('table.hours tr[data-day="' + day + '"]');
+      if (row) {
+        row.classList.add("is-today");
+        const tag = document.createElement("span");
+        tag.className = "today-tag"; tag.textContent = "Hoy";
+        row.querySelector("th").appendChild(tag);
+      }
+      const weekday = day >= 1 && day <= 5;
+      const open = weekday && ((minutes >= 540 && minutes < 840) || (minutes >= 960 && minutes < 1200));
+      pill.textContent = open ? "Ahora abierto" : "Ahora cerrado";
+      pill.classList.toggle("is-open", open);
+    })();
+
+    /* ---------- Modales legales (<dialog>) ---------- */
+    let lastTrigger = null;
+    document.querySelectorAll("[data-open]").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const dlg = document.getElementById(btn.dataset.open);
+        if (!dlg) return;
+        lastTrigger = btn;
+        if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.setAttribute("open", "");
+        const closeBtn = dlg.querySelector("[data-close]");
+        if (closeBtn) closeBtn.focus();
+      });
+    });
+    document.querySelectorAll("dialog.legal").forEach((dlg) => {
+      dlg.querySelectorAll("[data-close]").forEach((b) => b.addEventListener("click", () => dlg.close()));
+      dlg.addEventListener("click", (e) => { if (e.target === dlg) dlg.close(); }); // clic en el fondo
+      dlg.addEventListener("close", () => { if (lastTrigger) lastTrigger.focus(); });
+    });
+
+    /* ---------- Consentimiento de cookies + mapa ---------- */
+    const banner = document.getElementById("cookie-banner");
+    const getConsent = () => { try { return localStorage.getItem(CONSENT_KEY); } catch (e) { return null; } };
+    const setConsent = (v) => { try { localStorage.setItem(CONSENT_KEY, v); } catch (e) {} };
+
+    function showBanner() { banner.hidden = false; document.body.classList.add("has-cookie-banner"); }
+    function hideBanner() { banner.hidden = true; document.body.classList.remove("has-cookie-banner"); }
+
+    function loadMap() {
+      const box = document.getElementById("map-box");
+      if (box.querySelector("iframe")) return;
+      const src = MAP_EMBED_URL.indexOf("[") === -1 ? MAP_EMBED_URL : MAP_FALLBACK_URL;
+      const iframe = document.createElement("iframe");
+      iframe.src = src;
+      iframe.title = "Mapa de ubicación de Sonrisa Turia en Valencia";
+      iframe.loading = "lazy";
+      iframe.referrerPolicy = "no-referrer-when-downgrade";
+      iframe.setAttribute("allowfullscreen", "");
+      box.appendChild(iframe);
+      const ph = document.getElementById("map-placeholder");
+      if (ph) ph.remove();
+    }
+    function unloadMap() {
+      const iframe = document.querySelector("#map-box iframe");
+      if (iframe) window.location.reload(); // al retirar el consentimiento, recargamos sin el mapa
+    }
+
+    document.getElementById("cookies-accept").addEventListener("click", () => {
+      setConsent("accepted"); hideBanner(); loadMap();
+    });
+    document.getElementById("cookies-reject").addEventListener("click", () => {
+      setConsent("rejected"); hideBanner(); unloadMap();
+    });
+    document.getElementById("reopen-cookies").addEventListener("click", () => {
+      showBanner(); document.getElementById("cookies-accept").focus();
+    });
+    // "Cargar mapa" = aceptar cookies de terceros de forma explícita
+    document.getElementById("load-map").addEventListener("click", () => {
+      setConsent("accepted"); hideBanner(); loadMap();
+    });
+
+    const consent = getConsent();
+    if (consent === "accepted") loadMap();
+    else if (consent !== "rejected") showBanner();
+
+    /* ---------- Formulario de contacto ---------- */
+    const form = document.getElementById("contact-form");
+    const statusBox = document.getElementById("form-status");
+    const submitBtn = document.getElementById("submit-btn");
+    const submitLabel = submitBtn.querySelector("span");
+
+    const rules = {
+      nombre: (v) => v.trim().length >= 2 || "Escribe tu nombre.",
+      email: (v) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) || "Escribe un email válido, por ejemplo nombre@correo.com.",
+      telefono: (v) => v.trim() === "" || /^[+0-9\s().-]{9,}$/.test(v.trim()) || "Escribe un teléfono válido o deja el campo vacío.",
+      motivo: (v) => v !== "" || "Selecciona el motivo de tu consulta.",
+      mensaje: (v) => v.trim().length >= 10 || "Escribe un mensaje de al menos 10 caracteres.",
+      privacidad: (_, el) => el.checked || "Debes aceptar la política de privacidad para enviar el formulario."
+    };
+
+    function validateField(name) {
+      const el = form.elements[name];
+      const result = rules[name](el.value, el);
+      const errorEl = document.getElementById(name + "-error");
+      if (result === true) {
+        el.removeAttribute("aria-invalid");
+        errorEl.textContent = "";
+        return true;
+      }
+      el.setAttribute("aria-invalid", "true");
+      errorEl.textContent = result;
+      return false;
+    }
+
+    Object.keys(rules).forEach((name) => {
+      const el = form.elements[name];
+      const evt = el.type === "checkbox" || el.tagName === "SELECT" ? "change" : "blur";
+      el.addEventListener(evt, () => { if (el.hasAttribute("aria-invalid") || el.value) validateField(name); });
+    });
+
+    function setStatus(msg, type) {
+      statusBox.textContent = msg;
+      statusBox.className = "form-status" + (type ? " is-" + type : "");
+    }
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      setStatus("", null);
+
+      let firstInvalid = null;
+      Object.keys(rules).forEach((name) => {
+        if (!validateField(name) && !firstInvalid) firstInvalid = form.elements[name];
+      });
+      if (firstInvalid) {
+        firstInvalid.focus();
+        setStatus("Revisa los campos marcados para poder enviar el mensaje.", "error");
+        return;
+      }
+
+      // Honeypot: si un bot lo rellena, fingimos éxito y no enviamos nada
+      if (form.elements["_gotcha"].value) {
+        form.reset();
+        setStatus("Gracias, hemos recibido tu mensaje.", "success");
+        return;
+      }
+
+      if (FORM_ENDPOINT.indexOf("[") !== -1) {
+        setStatus("El formulario aún no está conectado. Mientras tanto, llámanos por teléfono o escríbenos por email.", "error");
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitLabel.textContent = "Enviando…";
+      setStatus("Enviando tu mensaje…", null);
+
+      try {
+        const data = new FormData(form);
+        data.set("privacidad", "aceptada");
+        const res = await fetch(FORM_ENDPOINT, {
+          method: "POST",
+          body: data,
+          headers: { "Accept": "application/json" }
+        });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        form.reset();
+        setStatus("¡Gracias! Hemos recibido tu mensaje y te responderemos lo antes posible en horario de clínica.", "success");
+      } catch (err) {
+        setStatus("No hemos podido enviar tu mensaje. Inténtalo de nuevo o llámanos por teléfono.", "error");
+      } finally {
+        submitBtn.disabled = false;
+        submitLabel.textContent = "Enviar mensaje";
+      }
+    });
+
+    /* ---------- Animaciones de aparición ---------- */
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const items = document.querySelectorAll(".reveal");
+    if (reduce || !("IntersectionObserver" in window)) {
+      items.forEach((el) => el.classList.add("is-visible"));
+    } else {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) { entry.target.classList.add("is-visible"); io.unobserve(entry.target); }
+        });
+      }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+      items.forEach((el) => io.observe(el));
+    }
+  })();
+  </script>
+</body>
+</html>
